@@ -1,5 +1,0 @@
-Port 22
-Protocol 2
-PermitRootLogin yes
-PasswordAuthentication no
-ChallengeResponseAuthentication no
