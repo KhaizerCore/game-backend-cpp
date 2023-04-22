@@ -1,10 +1,14 @@
-cmake_minimum_required(VERSION 3.10)
+add_executable(base src/base.cpp)
 
-add_executable(base base.cpp)
+target_link_libraries(base
 
+<<<<<<< Updated upstream
 # target_link_libraries()
+=======
+)
+>>>>>>> Stashed changes
 
-target_include_directories(
+target_include_directories(base
     PUBLIC
         ./include
 )
