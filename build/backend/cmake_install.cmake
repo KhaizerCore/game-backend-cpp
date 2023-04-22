@@ -1,4 +1,4 @@
-# Install script for directory: /home/dev-projects/game-backend-cpp/backend
+# Install script for directory: /home/game-backend-cpp/backend
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,11 +44,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/dev-projects/game-backend-cpp/build/backend/libraries/cmake_install.cmake")
+  include("/home/game-backend-cpp/build/backend/libraries/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/dev-projects/game-backend-cpp/build/backend/shared/utils/cmake_install.cmake")
+  include("/home/game-backend-cpp/build/backend/shared/utils/cmake_install.cmake")
 endif()
 

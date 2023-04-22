@@ -171,8 +171,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "/home/dev-projects/game-backend-cpp/build",
-		"source" : "/home/dev-projects/game-backend-cpp"
+		"build" : "/home/game-backend-cpp/build",
+		"source" : "/home/game-backend-cpp"
 	},
 	"version" : 
 	{

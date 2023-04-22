@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/dev-projects/game-backend-cpp/backend/libraries/base/src/main-lobby.cpp" "/home/dev-projects/game-backend-cpp/build/backend/libraries/base/CMakeFiles/game-backend.dir/src/main-lobby.cpp.o"
-  "/home/dev-projects/game-backend-cpp/backend/libraries/base/src/main.cpp" "/home/dev-projects/game-backend-cpp/build/backend/libraries/base/CMakeFiles/game-backend.dir/src/main.cpp.o"
-  "/home/dev-projects/game-backend-cpp/backend/libraries/base/src/person.cpp" "/home/dev-projects/game-backend-cpp/build/backend/libraries/base/CMakeFiles/game-backend.dir/src/person.cpp.o"
+  "/home/game-backend-cpp/backend/libraries/base/src/main-lobby.cpp" "/home/game-backend-cpp/build/backend/libraries/base/CMakeFiles/game-backend.dir/src/main-lobby.cpp.o"
+  "/home/game-backend-cpp/backend/libraries/base/src/main.cpp" "/home/game-backend-cpp/build/backend/libraries/base/CMakeFiles/game-backend.dir/src/main.cpp.o"
+  "/home/game-backend-cpp/backend/libraries/base/src/person.cpp" "/home/game-backend-cpp/build/backend/libraries/base/CMakeFiles/game-backend.dir/src/person.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

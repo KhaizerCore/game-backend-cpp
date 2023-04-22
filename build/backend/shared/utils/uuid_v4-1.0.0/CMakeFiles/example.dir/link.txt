@@ -1,1 +1,0 @@
-/usr/bin/g++  -march=native -O3 -DNDEBUG CMakeFiles/example.dir/example.cpp.o -o example 

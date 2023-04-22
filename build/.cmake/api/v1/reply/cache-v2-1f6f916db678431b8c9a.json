@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/dev-projects/game-backend-cpp/build"
+			"value" : "/home/game-backend-cpp/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -514,10 +514,6 @@
 			"properties" : 
 			[
 				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
 					"name" : "HELPSTRING",
 					"value" : "No help, variable specified on the command line."
 				}
@@ -595,7 +591,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/dev-projects/game-backend-cpp"
+			"value" : "/home/game-backend-cpp"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1215,7 +1211,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/dev-projects/game-backend-cpp/build"
+			"value" : "/home/game-backend-cpp/build"
 		},
 		{
 			"name" : "game-backend_SOURCE_DIR",
@@ -1227,7 +1223,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/dev-projects/game-backend-cpp"
+			"value" : "/home/game-backend-cpp"
 		},
 		{
 			"name" : "test",
@@ -1263,7 +1259,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/dev-projects/game-backend-cpp/build/backend/shared/utils/uuid_v4"
+			"value" : "/home/game-backend-cpp/build/backend/shared/utils/uuid_v4"
 		},
 		{
 			"name" : "uuid_v4_SOURCE_DIR",
@@ -1275,7 +1271,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/dev-projects/game-backend-cpp/backend/shared/utils/uuid_v4"
+			"value" : "/home/game-backend-cpp/backend/shared/utils/uuid_v4"
 		}
 	],
 	"kind" : "cache",

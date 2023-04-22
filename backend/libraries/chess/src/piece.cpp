@@ -2,8 +2,8 @@
 
 using namespace std;
 
-Piece::Piece(piece_type pieceType, int pos_x, int pos_y){
-    this->pieceType = pieceType;
+Piece::Piece(pieceInfo piece_info, int pos_x, int pos_y){
+    this->info = piece_info;
     this->pos_x = pos_x;
     this->pos_y = pos_y;
 }

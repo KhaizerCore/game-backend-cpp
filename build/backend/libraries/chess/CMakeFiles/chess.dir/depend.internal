@@ -4,7 +4,7 @@
 backend/libraries/chess/CMakeFiles/chess.dir/src/board.cpp.o
  ../backend/libraries/chess/include/board.h
  ../backend/libraries/chess/include/piece.h
- /home/dev-projects/game-backend-cpp/backend/libraries/chess/src/board.cpp
+ /home/game-backend-cpp/backend/libraries/chess/src/board.cpp
 backend/libraries/chess/CMakeFiles/chess.dir/src/piece.cpp.o
  ../backend/libraries/chess/include/piece.h
- /home/dev-projects/game-backend-cpp/backend/libraries/chess/src/piece.cpp
+ /home/game-backend-cpp/backend/libraries/chess/src/piece.cpp

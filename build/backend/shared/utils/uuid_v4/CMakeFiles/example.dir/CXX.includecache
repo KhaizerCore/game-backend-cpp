@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/dev-projects/game-backend-cpp/backend/shared/utils/uuid_v4/endianness.h
+/home/game-backend-cpp/backend/shared/utils/uuid_v4/endianness.h
 endian.h
 -
 machine/endian.h
@@ -28,7 +28,7 @@ tmmintrin.h
 stdint.h
 -
 
-/home/dev-projects/game-backend-cpp/backend/shared/utils/uuid_v4/example.cpp
+/home/game-backend-cpp/backend/shared/utils/uuid_v4/example.cpp
 iostream
 -
 random
@@ -36,9 +36,9 @@ random
 chrono
 -
 uuid_v4.h
-/home/dev-projects/game-backend-cpp/backend/shared/utils/uuid_v4/uuid_v4.h
+/home/game-backend-cpp/backend/shared/utils/uuid_v4/uuid_v4.h
 
-/home/dev-projects/game-backend-cpp/backend/shared/utils/uuid_v4/uuid_v4.h
+/home/game-backend-cpp/backend/shared/utils/uuid_v4/uuid_v4.h
 random
 -
 string
@@ -60,5 +60,5 @@ smmintrin.h
 immintrin.h
 -
 endianness.h
-/home/dev-projects/game-backend-cpp/backend/shared/utils/uuid_v4/endianness.h
+/home/game-backend-cpp/backend/shared/utils/uuid_v4/endianness.h
 

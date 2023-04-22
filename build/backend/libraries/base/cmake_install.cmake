@@ -1,4 +1,4 @@
-# Install script for directory: /home/dev-projects/game-backend-cpp/backend/libraries/base
+# Install script for directory: /home/game-backend-cpp/backend/libraries/base
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

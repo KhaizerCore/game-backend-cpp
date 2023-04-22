@@ -1,5 +1,0 @@
-/usr/local/include/uuid_v4/uuid_v4.h
-/usr/local/include/uuid_v4/endianness.h
-/usr/local/lib/cmake/uuid_v4/uuid_v4Config.cmake
-/usr/local/lib/cmake/uuid_v4/uuid_v4ConfigVersion.cmake
-/usr/local/lib/cmake/uuid_v4/uuid_v4Targets.cmake

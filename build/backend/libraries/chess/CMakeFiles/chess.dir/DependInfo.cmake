@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/dev-projects/game-backend-cpp/backend/libraries/chess/src/board.cpp" "/home/dev-projects/game-backend-cpp/build/backend/libraries/chess/CMakeFiles/chess.dir/src/board.cpp.o"
-  "/home/dev-projects/game-backend-cpp/backend/libraries/chess/src/piece.cpp" "/home/dev-projects/game-backend-cpp/build/backend/libraries/chess/CMakeFiles/chess.dir/src/piece.cpp.o"
+  "/home/game-backend-cpp/backend/libraries/chess/src/board.cpp" "/home/game-backend-cpp/build/backend/libraries/chess/CMakeFiles/chess.dir/src/board.cpp.o"
+  "/home/game-backend-cpp/backend/libraries/chess/src/piece.cpp" "/home/game-backend-cpp/build/backend/libraries/chess/CMakeFiles/chess.dir/src/piece.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

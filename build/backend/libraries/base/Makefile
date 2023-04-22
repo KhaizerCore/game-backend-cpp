@@ -67,10 +67,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dev-projects/game-backend-cpp
+CMAKE_SOURCE_DIR = /home/game-backend-cpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dev-projects/game-backend-cpp/build
+CMAKE_BINARY_DIR = /home/game-backend-cpp/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -145,14 +145,14 @@ install/local/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/dev-projects/game-backend-cpp/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/dev-projects/game-backend-cpp/build/CMakeFiles /home/dev-projects/game-backend-cpp/build/backend/libraries/base//CMakeFiles/progress.marks
-	cd /home/dev-projects/game-backend-cpp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 backend/libraries/base/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dev-projects/game-backend-cpp/build/CMakeFiles 0
+	cd /home/game-backend-cpp/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/game-backend-cpp/build/CMakeFiles /home/game-backend-cpp/build/backend/libraries/base//CMakeFiles/progress.marks
+	cd /home/game-backend-cpp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 backend/libraries/base/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/game-backend-cpp/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/dev-projects/game-backend-cpp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 backend/libraries/base/clean
+	cd /home/game-backend-cpp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 backend/libraries/base/clean
 .PHONY : clean
 
 # The main clean target
@@ -162,22 +162,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/dev-projects/game-backend-cpp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 backend/libraries/base/preinstall
+	cd /home/game-backend-cpp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 backend/libraries/base/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/dev-projects/game-backend-cpp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 backend/libraries/base/preinstall
+	cd /home/game-backend-cpp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 backend/libraries/base/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/dev-projects/game-backend-cpp/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/game-backend-cpp/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 backend/libraries/base/CMakeFiles/game-backend.dir/rule:
-	cd /home/dev-projects/game-backend-cpp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 backend/libraries/base/CMakeFiles/game-backend.dir/rule
+	cd /home/game-backend-cpp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 backend/libraries/base/CMakeFiles/game-backend.dir/rule
 .PHONY : backend/libraries/base/CMakeFiles/game-backend.dir/rule
 
 # Convenience name for target.
@@ -187,7 +187,7 @@ game-backend: backend/libraries/base/CMakeFiles/game-backend.dir/rule
 
 # fast build rule for target.
 game-backend/fast:
-	cd /home/dev-projects/game-backend-cpp/build && $(MAKE) $(MAKESILENT) -f backend/libraries/base/CMakeFiles/game-backend.dir/build.make backend/libraries/base/CMakeFiles/game-backend.dir/build
+	cd /home/game-backend-cpp/build && $(MAKE) $(MAKESILENT) -f backend/libraries/base/CMakeFiles/game-backend.dir/build.make backend/libraries/base/CMakeFiles/game-backend.dir/build
 .PHONY : game-backend/fast
 
 src/main-lobby.o: src/main-lobby.cpp.o
@@ -196,7 +196,7 @@ src/main-lobby.o: src/main-lobby.cpp.o
 
 # target to build an object file
 src/main-lobby.cpp.o:
-	cd /home/dev-projects/game-backend-cpp/build && $(MAKE) $(MAKESILENT) -f backend/libraries/base/CMakeFiles/game-backend.dir/build.make backend/libraries/base/CMakeFiles/game-backend.dir/src/main-lobby.cpp.o
+	cd /home/game-backend-cpp/build && $(MAKE) $(MAKESILENT) -f backend/libraries/base/CMakeFiles/game-backend.dir/build.make backend/libraries/base/CMakeFiles/game-backend.dir/src/main-lobby.cpp.o
 .PHONY : src/main-lobby.cpp.o
 
 src/main-lobby.i: src/main-lobby.cpp.i
@@ -205,7 +205,7 @@ src/main-lobby.i: src/main-lobby.cpp.i
 
 # target to preprocess a source file
 src/main-lobby.cpp.i:
-	cd /home/dev-projects/game-backend-cpp/build && $(MAKE) $(MAKESILENT) -f backend/libraries/base/CMakeFiles/game-backend.dir/build.make backend/libraries/base/CMakeFiles/game-backend.dir/src/main-lobby.cpp.i
+	cd /home/game-backend-cpp/build && $(MAKE) $(MAKESILENT) -f backend/libraries/base/CMakeFiles/game-backend.dir/build.make backend/libraries/base/CMakeFiles/game-backend.dir/src/main-lobby.cpp.i
 .PHONY : src/main-lobby.cpp.i
 
 src/main-lobby.s: src/main-lobby.cpp.s
@@ -214,7 +214,7 @@ src/main-lobby.s: src/main-lobby.cpp.s
 
 # target to generate assembly for a file
 src/main-lobby.cpp.s:
-	cd /home/dev-projects/game-backend-cpp/build && $(MAKE) $(MAKESILENT) -f backend/libraries/base/CMakeFiles/game-backend.dir/build.make backend/libraries/base/CMakeFiles/game-backend.dir/src/main-lobby.cpp.s
+	cd /home/game-backend-cpp/build && $(MAKE) $(MAKESILENT) -f backend/libraries/base/CMakeFiles/game-backend.dir/build.make backend/libraries/base/CMakeFiles/game-backend.dir/src/main-lobby.cpp.s
 .PHONY : src/main-lobby.cpp.s
 
 src/main.o: src/main.cpp.o
@@ -223,7 +223,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	cd /home/dev-projects/game-backend-cpp/build && $(MAKE) $(MAKESILENT) -f backend/libraries/base/CMakeFiles/game-backend.dir/build.make backend/libraries/base/CMakeFiles/game-backend.dir/src/main.cpp.o
+	cd /home/game-backend-cpp/build && $(MAKE) $(MAKESILENT) -f backend/libraries/base/CMakeFiles/game-backend.dir/build.make backend/libraries/base/CMakeFiles/game-backend.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -232,7 +232,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	cd /home/dev-projects/game-backend-cpp/build && $(MAKE) $(MAKESILENT) -f backend/libraries/base/CMakeFiles/game-backend.dir/build.make backend/libraries/base/CMakeFiles/game-backend.dir/src/main.cpp.i
+	cd /home/game-backend-cpp/build && $(MAKE) $(MAKESILENT) -f backend/libraries/base/CMakeFiles/game-backend.dir/build.make backend/libraries/base/CMakeFiles/game-backend.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -241,7 +241,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	cd /home/dev-projects/game-backend-cpp/build && $(MAKE) $(MAKESILENT) -f backend/libraries/base/CMakeFiles/game-backend.dir/build.make backend/libraries/base/CMakeFiles/game-backend.dir/src/main.cpp.s
+	cd /home/game-backend-cpp/build && $(MAKE) $(MAKESILENT) -f backend/libraries/base/CMakeFiles/game-backend.dir/build.make backend/libraries/base/CMakeFiles/game-backend.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 src/person.o: src/person.cpp.o
@@ -250,7 +250,7 @@ src/person.o: src/person.cpp.o
 
 # target to build an object file
 src/person.cpp.o:
-	cd /home/dev-projects/game-backend-cpp/build && $(MAKE) $(MAKESILENT) -f backend/libraries/base/CMakeFiles/game-backend.dir/build.make backend/libraries/base/CMakeFiles/game-backend.dir/src/person.cpp.o
+	cd /home/game-backend-cpp/build && $(MAKE) $(MAKESILENT) -f backend/libraries/base/CMakeFiles/game-backend.dir/build.make backend/libraries/base/CMakeFiles/game-backend.dir/src/person.cpp.o
 .PHONY : src/person.cpp.o
 
 src/person.i: src/person.cpp.i
@@ -259,7 +259,7 @@ src/person.i: src/person.cpp.i
 
 # target to preprocess a source file
 src/person.cpp.i:
-	cd /home/dev-projects/game-backend-cpp/build && $(MAKE) $(MAKESILENT) -f backend/libraries/base/CMakeFiles/game-backend.dir/build.make backend/libraries/base/CMakeFiles/game-backend.dir/src/person.cpp.i
+	cd /home/game-backend-cpp/build && $(MAKE) $(MAKESILENT) -f backend/libraries/base/CMakeFiles/game-backend.dir/build.make backend/libraries/base/CMakeFiles/game-backend.dir/src/person.cpp.i
 .PHONY : src/person.cpp.i
 
 src/person.s: src/person.cpp.s
@@ -268,7 +268,7 @@ src/person.s: src/person.cpp.s
 
 # target to generate assembly for a file
 src/person.cpp.s:
-	cd /home/dev-projects/game-backend-cpp/build && $(MAKE) $(MAKESILENT) -f backend/libraries/base/CMakeFiles/game-backend.dir/build.make backend/libraries/base/CMakeFiles/game-backend.dir/src/person.cpp.s
+	cd /home/game-backend-cpp/build && $(MAKE) $(MAKESILENT) -f backend/libraries/base/CMakeFiles/game-backend.dir/build.make backend/libraries/base/CMakeFiles/game-backend.dir/src/person.cpp.s
 .PHONY : src/person.cpp.s
 
 # Help Target
@@ -304,6 +304,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/dev-projects/game-backend-cpp/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/game-backend-cpp/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

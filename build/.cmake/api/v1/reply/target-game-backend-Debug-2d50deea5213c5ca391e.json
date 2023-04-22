@@ -67,15 +67,15 @@
 			[
 				{
 					"backtrace" : 2,
-					"path" : "/home/dev-projects/game-backend-cpp/backend/libraries/base/../../shared/utils/uuid_v4"
+					"path" : "/home/game-backend-cpp/backend/libraries/base/../../shared/utils/uuid_v4"
 				},
 				{
 					"backtrace" : 3,
-					"path" : "/home/dev-projects/game-backend-cpp/backend/libraries/base/./include"
+					"path" : "/home/game-backend-cpp/backend/libraries/base/./include"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "/home/dev-projects/game-backend-cpp/backend/shared/utils/uuid_v4"
+					"path" : "/home/game-backend-cpp/backend/shared/utils/uuid_v4"
 				}
 			],
 			"language" : "CXX",

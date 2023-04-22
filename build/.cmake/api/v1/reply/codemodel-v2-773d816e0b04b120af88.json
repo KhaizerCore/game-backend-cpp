@@ -150,7 +150,7 @@
 				{
 					"directoryIndex" : 4,
 					"id" : "chess::@75f530d8603ddde16610",
-					"jsonFile" : "target-chess-Debug-f434aef5e3a249d5f868.json",
+					"jsonFile" : "target-chess-Debug-7168251bc911e2b3d74e.json",
 					"name" : "chess",
 					"projectIndex" : 0
 				},
@@ -164,7 +164,7 @@
 				{
 					"directoryIndex" : 3,
 					"id" : "game-backend::@1ab4b22fc3d06717df6e",
-					"jsonFile" : "target-game-backend-Debug-6549191b2a2783ee48ea.json",
+					"jsonFile" : "target-game-backend-Debug-2d50deea5213c5ca391e.json",
 					"name" : "game-backend",
 					"projectIndex" : 0
 				}
@@ -174,8 +174,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/dev-projects/game-backend-cpp/build",
-		"source" : "/home/dev-projects/game-backend-cpp"
+		"build" : "/home/game-backend-cpp/build",
+		"source" : "/home/game-backend-cpp"
 	},
 	"version" : 
 	{

@@ -50,7 +50,7 @@
 			[
 				{
 					"backtrace" : 2,
-					"path" : "/home/dev-projects/game-backend-cpp/backend/libraries/chess/./include"
+					"path" : "/home/game-backend-cpp/backend/libraries/chess/./include"
 				}
 			],
 			"language" : "CXX",

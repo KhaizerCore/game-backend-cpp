@@ -14,9 +14,13 @@ piece.h
 
 ../backend/libraries/chess/include/piece.h
 
-/home/dev-projects/game-backend-cpp/backend/libraries/chess/src/board.cpp
+/home/game-backend-cpp/backend/libraries/chess/src/board.cpp
 board.h
 -
 iostream
+-
+
+/home/game-backend-cpp/backend/libraries/chess/src/piece.cpp
+piece.h
 -
 

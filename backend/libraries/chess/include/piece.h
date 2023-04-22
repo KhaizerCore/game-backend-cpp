@@ -9,6 +9,16 @@ typedef enum{
     PAWN
 }piece_type;
 
+typedef enum{
+    BLACK,
+    WHITE
+}piece_color;
+
+typedef struct pieceInfo_t{
+    piece_type type;
+    piece_color color;
+}pieceInfo;
+
 class Piece{
     public:
         static Piece* newKing(int pos_x, int pos_y);
@@ -22,7 +32,8 @@ class Piece{
 
     private:
         Piece(piece_type pieceType, int pos_x, int pos_y);
-        piece_type pieceType;
+        pieceInfo info;
+
 
         int pos_x;
         int pos_y;

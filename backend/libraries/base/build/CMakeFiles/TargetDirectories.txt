@@ -1,3 +1,0 @@
-/home/dev-projects/game-backend-cpp/backend/libraries/base/build/CMakeFiles/rebuild_cache.dir
-/home/dev-projects/game-backend-cpp/backend/libraries/base/build/CMakeFiles/edit_cache.dir
-/home/dev-projects/game-backend-cpp/backend/libraries/base/build/CMakeFiles/game-backend.dir
