@@ -23,7 +23,7 @@
 					"childIndexes" : 
 					[
 						2,
-						4
+						5
 					],
 					"hasInstallRule" : true,
 					"minimumCMakeVersion" : 
@@ -38,7 +38,8 @@
 					"build" : "backend/libraries",
 					"childIndexes" : 
 					[
-						3
+						3,
+						4
 					],
 					"minimumCMakeVersion" : 
 					{
@@ -59,14 +60,28 @@
 					"source" : "backend/libraries/base",
 					"targetIndexes" : 
 					[
-						1
+						2
+					]
+				},
+				{
+					"build" : "backend/libraries/chess",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "backend/libraries/chess",
+					"targetIndexes" : 
+					[
+						0
 					]
 				},
 				{
 					"build" : "backend/shared/utils",
 					"childIndexes" : 
 					[
-						5
+						6
 					],
 					"hasInstallRule" : true,
 					"minimumCMakeVersion" : 
@@ -84,12 +99,12 @@
 					{
 						"string" : "3.8"
 					},
-					"parentIndex" : 4,
+					"parentIndex" : 5,
 					"projectIndex" : 1,
 					"source" : "backend/shared/utils/uuid_v4",
 					"targetIndexes" : 
 					[
-						0
+						1
 					]
 				}
 			],
@@ -107,31 +122,40 @@
 						1,
 						2,
 						3,
-						4
+						4,
+						5
 					],
 					"name" : "game-backend",
 					"targetIndexes" : 
 					[
-						1
+						0,
+						2
 					]
 				},
 				{
 					"directoryIndexes" : 
 					[
-						5
+						6
 					],
 					"name" : "uuid_v4",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						0
+						1
 					]
 				}
 			],
 			"targets" : 
 			[
 				{
-					"directoryIndex" : 5,
+					"directoryIndex" : 4,
+					"id" : "chess::@75f530d8603ddde16610",
+					"jsonFile" : "target-chess-Debug-f434aef5e3a249d5f868.json",
+					"name" : "chess",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
 					"id" : "example::@e5fc83a8d122e9c03d0e",
 					"jsonFile" : "target-example-Debug-1aa9f5cb8c7e11b114cc.json",
 					"name" : "example",
@@ -140,7 +164,7 @@
 				{
 					"directoryIndex" : 3,
 					"id" : "game-backend::@1ab4b22fc3d06717df6e",
-					"jsonFile" : "target-game-backend-Debug-ce64e0c0a5b09381c31f.json",
+					"jsonFile" : "target-game-backend-Debug-6549191b2a2783ee48ea.json",
 					"name" : "game-backend",
 					"projectIndex" : 0
 				}

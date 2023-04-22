@@ -145,14 +145,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dev-projects/game-backend-cpp/build/CMakeFiles /home/dev-projects/game-backend-cpp/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /home/dev-projects/game-backend-cpp/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/dev-projects/game-backend-cpp/build/CMakeFiles /home/dev-projects/game-backend-cpp/build/backend/libraries/chess//CMakeFiles/progress.marks
+	cd /home/dev-projects/game-backend-cpp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 backend/libraries/chess/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dev-projects/game-backend-cpp/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /home/dev-projects/game-backend-cpp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 backend/libraries/chess/clean
 .PHONY : clean
 
 # The main clean target
@@ -162,57 +162,87 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/dev-projects/game-backend-cpp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 backend/libraries/chess/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /home/dev-projects/game-backend-cpp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 backend/libraries/chess/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/dev-projects/game-backend-cpp/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named game-backend
+# Convenience name for target.
+backend/libraries/chess/CMakeFiles/chess.dir/rule:
+	cd /home/dev-projects/game-backend-cpp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 backend/libraries/chess/CMakeFiles/chess.dir/rule
+.PHONY : backend/libraries/chess/CMakeFiles/chess.dir/rule
 
-# Build rule for target.
-game-backend: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 game-backend
-.PHONY : game-backend
+# Convenience name for target.
+chess: backend/libraries/chess/CMakeFiles/chess.dir/rule
 
-# fast build rule for target.
-game-backend/fast:
-	$(MAKE) $(MAKESILENT) -f backend/libraries/base/CMakeFiles/game-backend.dir/build.make backend/libraries/base/CMakeFiles/game-backend.dir/build
-.PHONY : game-backend/fast
-
-#=============================================================================
-# Target rules for targets named chess
-
-# Build rule for target.
-chess: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 chess
 .PHONY : chess
 
 # fast build rule for target.
 chess/fast:
-	$(MAKE) $(MAKESILENT) -f backend/libraries/chess/CMakeFiles/chess.dir/build.make backend/libraries/chess/CMakeFiles/chess.dir/build
+	cd /home/dev-projects/game-backend-cpp/build && $(MAKE) $(MAKESILENT) -f backend/libraries/chess/CMakeFiles/chess.dir/build.make backend/libraries/chess/CMakeFiles/chess.dir/build
 .PHONY : chess/fast
 
-#=============================================================================
-# Target rules for targets named example
+src/board.o: src/board.cpp.o
 
-# Build rule for target.
-example: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 example
-.PHONY : example
+.PHONY : src/board.o
 
-# fast build rule for target.
-example/fast:
-	$(MAKE) $(MAKESILENT) -f backend/shared/utils/uuid_v4/CMakeFiles/example.dir/build.make backend/shared/utils/uuid_v4/CMakeFiles/example.dir/build
-.PHONY : example/fast
+# target to build an object file
+src/board.cpp.o:
+	cd /home/dev-projects/game-backend-cpp/build && $(MAKE) $(MAKESILENT) -f backend/libraries/chess/CMakeFiles/chess.dir/build.make backend/libraries/chess/CMakeFiles/chess.dir/src/board.cpp.o
+.PHONY : src/board.cpp.o
+
+src/board.i: src/board.cpp.i
+
+.PHONY : src/board.i
+
+# target to preprocess a source file
+src/board.cpp.i:
+	cd /home/dev-projects/game-backend-cpp/build && $(MAKE) $(MAKESILENT) -f backend/libraries/chess/CMakeFiles/chess.dir/build.make backend/libraries/chess/CMakeFiles/chess.dir/src/board.cpp.i
+.PHONY : src/board.cpp.i
+
+src/board.s: src/board.cpp.s
+
+.PHONY : src/board.s
+
+# target to generate assembly for a file
+src/board.cpp.s:
+	cd /home/dev-projects/game-backend-cpp/build && $(MAKE) $(MAKESILENT) -f backend/libraries/chess/CMakeFiles/chess.dir/build.make backend/libraries/chess/CMakeFiles/chess.dir/src/board.cpp.s
+.PHONY : src/board.cpp.s
+
+src/piece.o: src/piece.cpp.o
+
+.PHONY : src/piece.o
+
+# target to build an object file
+src/piece.cpp.o:
+	cd /home/dev-projects/game-backend-cpp/build && $(MAKE) $(MAKESILENT) -f backend/libraries/chess/CMakeFiles/chess.dir/build.make backend/libraries/chess/CMakeFiles/chess.dir/src/piece.cpp.o
+.PHONY : src/piece.cpp.o
+
+src/piece.i: src/piece.cpp.i
+
+.PHONY : src/piece.i
+
+# target to preprocess a source file
+src/piece.cpp.i:
+	cd /home/dev-projects/game-backend-cpp/build && $(MAKE) $(MAKESILENT) -f backend/libraries/chess/CMakeFiles/chess.dir/build.make backend/libraries/chess/CMakeFiles/chess.dir/src/piece.cpp.i
+.PHONY : src/piece.cpp.i
+
+src/piece.s: src/piece.cpp.s
+
+.PHONY : src/piece.s
+
+# target to generate assembly for a file
+src/piece.cpp.s:
+	cd /home/dev-projects/game-backend-cpp/build && $(MAKE) $(MAKESILENT) -f backend/libraries/chess/CMakeFiles/chess.dir/build.make backend/libraries/chess/CMakeFiles/chess.dir/src/piece.cpp.s
+.PHONY : src/piece.cpp.s
 
 # Help Target
 help:
@@ -227,8 +257,12 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... chess"
-	@echo "... example"
-	@echo "... game-backend"
+	@echo "... src/board.o"
+	@echo "... src/board.i"
+	@echo "... src/board.s"
+	@echo "... src/piece.o"
+	@echo "... src/piece.i"
+	@echo "... src/piece.s"
 .PHONY : help
 
 
@@ -240,6 +274,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/dev-projects/game-backend-cpp/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -1,4 +1,4 @@
-add_executable(game-backend 
+add_library(game-backend STATIC
     src/main.cpp
     src/main-lobby.cpp
     src/person.cpp    

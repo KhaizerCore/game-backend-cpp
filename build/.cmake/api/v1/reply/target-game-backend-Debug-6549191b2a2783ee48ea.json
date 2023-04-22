@@ -1,8 +1,9 @@
 {
+	"archive" : {},
 	"artifacts" : 
 	[
 		{
-			"path" : "backend/libraries/base/game-backend"
+			"path" : "backend/libraries/base/libgame-backend.a"
 		}
 	],
 	"backtrace" : 1,
@@ -10,7 +11,7 @@
 	{
 		"commands" : 
 		[
-			"add_executable",
+			"add_library",
 			"include_directories",
 			"target_include_directories",
 			"target_link_libraries"
@@ -87,23 +88,8 @@
 		}
 	],
 	"id" : "game-backend::@1ab4b22fc3d06717df6e",
-	"link" : 
-	{
-		"commandFragments" : 
-		[
-			{
-				"fragment" : "-g",
-				"role" : "flags"
-			},
-			{
-				"fragment" : "",
-				"role" : "flags"
-			}
-		],
-		"language" : "CXX"
-	},
 	"name" : "game-backend",
-	"nameOnDisk" : "game-backend",
+	"nameOnDisk" : "libgame-backend.a",
 	"paths" : 
 	{
 		"build" : "backend/libraries/base",
@@ -142,5 +128,5 @@
 			"sourceGroupIndex" : 0
 		}
 	],
-	"type" : "EXECUTABLE"
+	"type" : "STATIC_LIBRARY"
 }

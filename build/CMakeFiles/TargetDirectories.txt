@@ -23,6 +23,13 @@
 /home/dev-projects/game-backend-cpp/build/backend/libraries/base/CMakeFiles/edit_cache.dir
 /home/dev-projects/game-backend-cpp/build/backend/libraries/base/CMakeFiles/install/local.dir
 /home/dev-projects/game-backend-cpp/build/backend/libraries/base/CMakeFiles/game-backend.dir
+/home/dev-projects/game-backend-cpp/build/backend/libraries/chess/CMakeFiles/install/strip.dir
+/home/dev-projects/game-backend-cpp/build/backend/libraries/chess/CMakeFiles/install/local.dir
+/home/dev-projects/game-backend-cpp/build/backend/libraries/chess/CMakeFiles/install.dir
+/home/dev-projects/game-backend-cpp/build/backend/libraries/chess/CMakeFiles/list_install_components.dir
+/home/dev-projects/game-backend-cpp/build/backend/libraries/chess/CMakeFiles/rebuild_cache.dir
+/home/dev-projects/game-backend-cpp/build/backend/libraries/chess/CMakeFiles/edit_cache.dir
+/home/dev-projects/game-backend-cpp/build/backend/libraries/chess/CMakeFiles/chess.dir
 /home/dev-projects/game-backend-cpp/build/backend/shared/utils/CMakeFiles/install/strip.dir
 /home/dev-projects/game-backend-cpp/build/backend/shared/utils/CMakeFiles/install/local.dir
 /home/dev-projects/game-backend-cpp/build/backend/shared/utils/CMakeFiles/install.dir

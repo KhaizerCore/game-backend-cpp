@@ -11,6 +11,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../backend/CMakeLists.txt"
   "../backend/libraries/CMakeLists.txt"
   "../backend/libraries/base/CMakeLists.txt"
+  "../backend/libraries/chess/CMakeLists.txt"
   "../backend/shared/utils/CMakeLists.txt"
   "../backend/shared/utils/uuid_v4/CMakeLists.txt"
   "../backend/shared/utils/uuid_v4/Config.cmake.in"
@@ -53,6 +54,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "backend/CMakeFiles/CMakeDirectoryInformation.cmake"
   "backend/libraries/CMakeFiles/CMakeDirectoryInformation.cmake"
   "backend/libraries/base/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "backend/libraries/chess/CMakeFiles/CMakeDirectoryInformation.cmake"
   "backend/shared/utils/CMakeFiles/CMakeDirectoryInformation.cmake"
   "backend/shared/utils/uuid_v4/generated/uuid_v4ConfigVersion.cmake"
   "backend/shared/utils/uuid_v4/generated/uuid_v4Config.cmake"
@@ -62,5 +64,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "backend/libraries/base/CMakeFiles/game-backend.dir/DependInfo.cmake"
+  "backend/libraries/chess/CMakeFiles/chess.dir/DependInfo.cmake"
   "backend/shared/utils/uuid_v4/CMakeFiles/example.dir/DependInfo.cmake"
   )

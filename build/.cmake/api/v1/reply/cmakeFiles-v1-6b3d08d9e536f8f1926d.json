@@ -141,6 +141,9 @@
 			"path" : "backend/libraries/base/CMakeLists.txt"
 		},
 		{
+			"path" : "backend/libraries/chess/CMakeLists.txt"
+		},
+		{
 			"path" : "backend/shared/utils/CMakeLists.txt"
 		},
 		{
