@@ -6,9 +6,9 @@ RUN apt-get update && \
     echo 'root:password' | chpasswd && \
     sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config && \
     sed -i 's/#PasswordAuthentication yes/PasswordAuthentication yes/' /etc/ssh/sshd_config && \
-    apt install nano && apt install cmake && \
-    apt install build-essential && apt install git && \
-    apt install curl && apt install wget && apt install htop \
+    apt install -y nano && apt install -y cmake && \
+    apt install -y build-essential && apt install -y git && \
+    apt install -y curl && apt install -y wget && apt install -y htop && \
     cat /etc/ssh/ssh_host_ecdsa_key.pub
 
 EXPOSE 22
