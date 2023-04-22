@@ -91,16 +91,19 @@ clean: backend/clean
 
 # Recursive "all" directory target.
 backend/all: backend/libraries/all
+backend/all: backend/shared/utils/all
 
 .PHONY : backend/all
 
 # Recursive "preinstall" directory target.
 backend/preinstall: backend/libraries/preinstall
+backend/preinstall: backend/shared/utils/preinstall
 
 .PHONY : backend/preinstall
 
 # Recursive "clean" directory target.
 backend/clean: backend/libraries/clean
+backend/clean: backend/shared/utils/clean
 
 .PHONY : backend/clean
 
@@ -126,7 +129,7 @@ backend/libraries/clean: backend/libraries/base/clean
 # Directory level rules for directory backend/libraries/base
 
 # Recursive "all" directory target.
-backend/libraries/base/all: backend/libraries/base/CMakeFiles/base.dir/all
+backend/libraries/base/all: backend/libraries/base/CMakeFiles/game-backend.dir/all
 
 .PHONY : backend/libraries/base/all
 
@@ -136,36 +139,99 @@ backend/libraries/base/preinstall:
 .PHONY : backend/libraries/base/preinstall
 
 # Recursive "clean" directory target.
-backend/libraries/base/clean: backend/libraries/base/CMakeFiles/base.dir/clean
+backend/libraries/base/clean: backend/libraries/base/CMakeFiles/game-backend.dir/clean
 
 .PHONY : backend/libraries/base/clean
 
 #=============================================================================
-# Target rules for target backend/libraries/base/CMakeFiles/base.dir
+# Directory level rules for directory backend/shared/utils
+
+# Recursive "all" directory target.
+backend/shared/utils/all: backend/shared/utils/uuid_v4/all
+
+.PHONY : backend/shared/utils/all
+
+# Recursive "preinstall" directory target.
+backend/shared/utils/preinstall: backend/shared/utils/uuid_v4/preinstall
+
+.PHONY : backend/shared/utils/preinstall
+
+# Recursive "clean" directory target.
+backend/shared/utils/clean: backend/shared/utils/uuid_v4/clean
+
+.PHONY : backend/shared/utils/clean
+
+#=============================================================================
+# Directory level rules for directory backend/shared/utils/uuid_v4
+
+# Recursive "all" directory target.
+backend/shared/utils/uuid_v4/all: backend/shared/utils/uuid_v4/CMakeFiles/example.dir/all
+
+.PHONY : backend/shared/utils/uuid_v4/all
+
+# Recursive "preinstall" directory target.
+backend/shared/utils/uuid_v4/preinstall:
+
+.PHONY : backend/shared/utils/uuid_v4/preinstall
+
+# Recursive "clean" directory target.
+backend/shared/utils/uuid_v4/clean: backend/shared/utils/uuid_v4/CMakeFiles/example.dir/clean
+
+.PHONY : backend/shared/utils/uuid_v4/clean
+
+#=============================================================================
+# Target rules for target backend/libraries/base/CMakeFiles/game-backend.dir
 
 # All Build rule for target.
-backend/libraries/base/CMakeFiles/base.dir/all:
-	$(MAKE) $(MAKESILENT) -f backend/libraries/base/CMakeFiles/base.dir/build.make backend/libraries/base/CMakeFiles/base.dir/depend
-	$(MAKE) $(MAKESILENT) -f backend/libraries/base/CMakeFiles/base.dir/build.make backend/libraries/base/CMakeFiles/base.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dev-projects/game-backend-cpp/build/CMakeFiles --progress-num=1,2 "Built target base"
-.PHONY : backend/libraries/base/CMakeFiles/base.dir/all
+backend/libraries/base/CMakeFiles/game-backend.dir/all:
+	$(MAKE) $(MAKESILENT) -f backend/libraries/base/CMakeFiles/game-backend.dir/build.make backend/libraries/base/CMakeFiles/game-backend.dir/depend
+	$(MAKE) $(MAKESILENT) -f backend/libraries/base/CMakeFiles/game-backend.dir/build.make backend/libraries/base/CMakeFiles/game-backend.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dev-projects/game-backend-cpp/build/CMakeFiles --progress-num=3,4,5,6 "Built target game-backend"
+.PHONY : backend/libraries/base/CMakeFiles/game-backend.dir/all
 
 # Build rule for subdir invocation for target.
-backend/libraries/base/CMakeFiles/base.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dev-projects/game-backend-cpp/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 backend/libraries/base/CMakeFiles/base.dir/all
+backend/libraries/base/CMakeFiles/game-backend.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dev-projects/game-backend-cpp/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 backend/libraries/base/CMakeFiles/game-backend.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/dev-projects/game-backend-cpp/build/CMakeFiles 0
-.PHONY : backend/libraries/base/CMakeFiles/base.dir/rule
+.PHONY : backend/libraries/base/CMakeFiles/game-backend.dir/rule
 
 # Convenience name for target.
-base: backend/libraries/base/CMakeFiles/base.dir/rule
+game-backend: backend/libraries/base/CMakeFiles/game-backend.dir/rule
 
-.PHONY : base
+.PHONY : game-backend
 
 # clean rule for target.
-backend/libraries/base/CMakeFiles/base.dir/clean:
-	$(MAKE) $(MAKESILENT) -f backend/libraries/base/CMakeFiles/base.dir/build.make backend/libraries/base/CMakeFiles/base.dir/clean
-.PHONY : backend/libraries/base/CMakeFiles/base.dir/clean
+backend/libraries/base/CMakeFiles/game-backend.dir/clean:
+	$(MAKE) $(MAKESILENT) -f backend/libraries/base/CMakeFiles/game-backend.dir/build.make backend/libraries/base/CMakeFiles/game-backend.dir/clean
+.PHONY : backend/libraries/base/CMakeFiles/game-backend.dir/clean
+
+#=============================================================================
+# Target rules for target backend/shared/utils/uuid_v4/CMakeFiles/example.dir
+
+# All Build rule for target.
+backend/shared/utils/uuid_v4/CMakeFiles/example.dir/all:
+	$(MAKE) $(MAKESILENT) -f backend/shared/utils/uuid_v4/CMakeFiles/example.dir/build.make backend/shared/utils/uuid_v4/CMakeFiles/example.dir/depend
+	$(MAKE) $(MAKESILENT) -f backend/shared/utils/uuid_v4/CMakeFiles/example.dir/build.make backend/shared/utils/uuid_v4/CMakeFiles/example.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dev-projects/game-backend-cpp/build/CMakeFiles --progress-num=1,2 "Built target example"
+.PHONY : backend/shared/utils/uuid_v4/CMakeFiles/example.dir/all
+
+# Build rule for subdir invocation for target.
+backend/shared/utils/uuid_v4/CMakeFiles/example.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dev-projects/game-backend-cpp/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 backend/shared/utils/uuid_v4/CMakeFiles/example.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dev-projects/game-backend-cpp/build/CMakeFiles 0
+.PHONY : backend/shared/utils/uuid_v4/CMakeFiles/example.dir/rule
+
+# Convenience name for target.
+example: backend/shared/utils/uuid_v4/CMakeFiles/example.dir/rule
+
+.PHONY : example
+
+# clean rule for target.
+backend/shared/utils/uuid_v4/CMakeFiles/example.dir/clean:
+	$(MAKE) $(MAKESILENT) -f backend/shared/utils/uuid_v4/CMakeFiles/example.dir/build.make backend/shared/utils/uuid_v4/CMakeFiles/example.dir/clean
+.PHONY : backend/shared/utils/uuid_v4/CMakeFiles/example.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

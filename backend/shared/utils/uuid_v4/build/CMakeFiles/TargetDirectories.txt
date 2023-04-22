@@ -1,0 +1,7 @@
+/home/dev-projects/game-backend-cpp/backend/shared/utils/uuid_v4/build/CMakeFiles/install/strip.dir
+/home/dev-projects/game-backend-cpp/backend/shared/utils/uuid_v4/build/CMakeFiles/install/local.dir
+/home/dev-projects/game-backend-cpp/backend/shared/utils/uuid_v4/build/CMakeFiles/install.dir
+/home/dev-projects/game-backend-cpp/backend/shared/utils/uuid_v4/build/CMakeFiles/list_install_components.dir
+/home/dev-projects/game-backend-cpp/backend/shared/utils/uuid_v4/build/CMakeFiles/rebuild_cache.dir
+/home/dev-projects/game-backend-cpp/backend/shared/utils/uuid_v4/build/CMakeFiles/edit_cache.dir
+/home/dev-projects/game-backend-cpp/backend/shared/utils/uuid_v4/build/CMakeFiles/example.dir

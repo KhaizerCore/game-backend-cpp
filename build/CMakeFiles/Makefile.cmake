@@ -11,9 +11,13 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../backend/CMakeLists.txt"
   "../backend/libraries/CMakeLists.txt"
   "../backend/libraries/base/CMakeLists.txt"
+  "../backend/shared/utils/CMakeLists.txt"
+  "../backend/shared/utils/uuid_v4/CMakeLists.txt"
+  "../backend/shared/utils/uuid_v4/Config.cmake.in"
   "CMakeFiles/3.18.4/CMakeCCompiler.cmake"
   "CMakeFiles/3.18.4/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.18.4/CMakeSystem.cmake"
+  "/usr/share/cmake-3.18/Modules/BasicConfigVersion-SameMajorVersion.cmake.in"
   "/usr/share/cmake-3.18/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake-3.18/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake-3.18/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake"
@@ -21,6 +25,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake-3.18/Modules/CMakeGenericSystem.cmake"
   "/usr/share/cmake-3.18/Modules/CMakeInitializeConfigs.cmake"
   "/usr/share/cmake-3.18/Modules/CMakeLanguageInformation.cmake"
+  "/usr/share/cmake-3.18/Modules/CMakePackageConfigHelpers.cmake"
   "/usr/share/cmake-3.18/Modules/CMakeSystemSpecificInformation.cmake"
   "/usr/share/cmake-3.18/Modules/CMakeSystemSpecificInitialize.cmake"
   "/usr/share/cmake-3.18/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
@@ -33,6 +38,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake-3.18/Modules/Platform/Linux-GNU.cmake"
   "/usr/share/cmake-3.18/Modules/Platform/Linux.cmake"
   "/usr/share/cmake-3.18/Modules/Platform/UnixPaths.cmake"
+  "/usr/share/cmake-3.18/Modules/WriteBasicConfigVersionFile.cmake"
   )
 
 # The corresponding makefile is:
@@ -47,9 +53,14 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "backend/CMakeFiles/CMakeDirectoryInformation.cmake"
   "backend/libraries/CMakeFiles/CMakeDirectoryInformation.cmake"
   "backend/libraries/base/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "backend/shared/utils/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "backend/shared/utils/uuid_v4/generated/uuid_v4ConfigVersion.cmake"
+  "backend/shared/utils/uuid_v4/generated/uuid_v4Config.cmake"
+  "backend/shared/utils/uuid_v4/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "backend/libraries/base/CMakeFiles/base.dir/DependInfo.cmake"
+  "backend/libraries/base/CMakeFiles/game-backend.dir/DependInfo.cmake"
+  "backend/shared/utils/uuid_v4/CMakeFiles/example.dir/DependInfo.cmake"
   )

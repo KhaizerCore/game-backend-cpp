@@ -4,3 +4,8 @@
 backend/libraries/base/CMakeFiles/base.dir/src/base.cpp.o: ../backend/libraries/base/include/base.h
 backend/libraries/base/CMakeFiles/base.dir/src/base.cpp.o: ../backend/libraries/base/src/base.cpp
 
+backend/libraries/base/CMakeFiles/base.dir/src/person.cpp.o: ../backend/libraries/base/include/person.h
+backend/libraries/base/CMakeFiles/base.dir/src/person.cpp.o: ../backend/shared/utils/uuid_v4/endianness.h
+backend/libraries/base/CMakeFiles/base.dir/src/person.cpp.o: ../backend/shared/utils/uuid_v4/uuid_v4.h
+backend/libraries/base/CMakeFiles/base.dir/src/person.cpp.o: ../backend/libraries/base/src/person.cpp
+

@@ -75,6 +75,40 @@ CMAKE_BINARY_DIR = /home/dev-projects/game-backend-cpp/build
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -96,6 +130,18 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -130,46 +176,100 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-backend/libraries/base/CMakeFiles/base.dir/rule:
-	cd /home/dev-projects/game-backend-cpp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 backend/libraries/base/CMakeFiles/base.dir/rule
-.PHONY : backend/libraries/base/CMakeFiles/base.dir/rule
+backend/libraries/base/CMakeFiles/game-backend.dir/rule:
+	cd /home/dev-projects/game-backend-cpp/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 backend/libraries/base/CMakeFiles/game-backend.dir/rule
+.PHONY : backend/libraries/base/CMakeFiles/game-backend.dir/rule
 
 # Convenience name for target.
-base: backend/libraries/base/CMakeFiles/base.dir/rule
+game-backend: backend/libraries/base/CMakeFiles/game-backend.dir/rule
 
-.PHONY : base
+.PHONY : game-backend
 
 # fast build rule for target.
-base/fast:
-	cd /home/dev-projects/game-backend-cpp/build && $(MAKE) $(MAKESILENT) -f backend/libraries/base/CMakeFiles/base.dir/build.make backend/libraries/base/CMakeFiles/base.dir/build
-.PHONY : base/fast
+game-backend/fast:
+	cd /home/dev-projects/game-backend-cpp/build && $(MAKE) $(MAKESILENT) -f backend/libraries/base/CMakeFiles/game-backend.dir/build.make backend/libraries/base/CMakeFiles/game-backend.dir/build
+.PHONY : game-backend/fast
 
-src/base.o: src/base.cpp.o
+src/main-lobby.o: src/main-lobby.cpp.o
 
-.PHONY : src/base.o
+.PHONY : src/main-lobby.o
 
 # target to build an object file
-src/base.cpp.o:
-	cd /home/dev-projects/game-backend-cpp/build && $(MAKE) $(MAKESILENT) -f backend/libraries/base/CMakeFiles/base.dir/build.make backend/libraries/base/CMakeFiles/base.dir/src/base.cpp.o
-.PHONY : src/base.cpp.o
+src/main-lobby.cpp.o:
+	cd /home/dev-projects/game-backend-cpp/build && $(MAKE) $(MAKESILENT) -f backend/libraries/base/CMakeFiles/game-backend.dir/build.make backend/libraries/base/CMakeFiles/game-backend.dir/src/main-lobby.cpp.o
+.PHONY : src/main-lobby.cpp.o
 
-src/base.i: src/base.cpp.i
+src/main-lobby.i: src/main-lobby.cpp.i
 
-.PHONY : src/base.i
+.PHONY : src/main-lobby.i
 
 # target to preprocess a source file
-src/base.cpp.i:
-	cd /home/dev-projects/game-backend-cpp/build && $(MAKE) $(MAKESILENT) -f backend/libraries/base/CMakeFiles/base.dir/build.make backend/libraries/base/CMakeFiles/base.dir/src/base.cpp.i
-.PHONY : src/base.cpp.i
+src/main-lobby.cpp.i:
+	cd /home/dev-projects/game-backend-cpp/build && $(MAKE) $(MAKESILENT) -f backend/libraries/base/CMakeFiles/game-backend.dir/build.make backend/libraries/base/CMakeFiles/game-backend.dir/src/main-lobby.cpp.i
+.PHONY : src/main-lobby.cpp.i
 
-src/base.s: src/base.cpp.s
+src/main-lobby.s: src/main-lobby.cpp.s
 
-.PHONY : src/base.s
+.PHONY : src/main-lobby.s
 
 # target to generate assembly for a file
-src/base.cpp.s:
-	cd /home/dev-projects/game-backend-cpp/build && $(MAKE) $(MAKESILENT) -f backend/libraries/base/CMakeFiles/base.dir/build.make backend/libraries/base/CMakeFiles/base.dir/src/base.cpp.s
-.PHONY : src/base.cpp.s
+src/main-lobby.cpp.s:
+	cd /home/dev-projects/game-backend-cpp/build && $(MAKE) $(MAKESILENT) -f backend/libraries/base/CMakeFiles/game-backend.dir/build.make backend/libraries/base/CMakeFiles/game-backend.dir/src/main-lobby.cpp.s
+.PHONY : src/main-lobby.cpp.s
+
+src/main.o: src/main.cpp.o
+
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	cd /home/dev-projects/game-backend-cpp/build && $(MAKE) $(MAKESILENT) -f backend/libraries/base/CMakeFiles/game-backend.dir/build.make backend/libraries/base/CMakeFiles/game-backend.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	cd /home/dev-projects/game-backend-cpp/build && $(MAKE) $(MAKESILENT) -f backend/libraries/base/CMakeFiles/game-backend.dir/build.make backend/libraries/base/CMakeFiles/game-backend.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	cd /home/dev-projects/game-backend-cpp/build && $(MAKE) $(MAKESILENT) -f backend/libraries/base/CMakeFiles/game-backend.dir/build.make backend/libraries/base/CMakeFiles/game-backend.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
+
+src/person.o: src/person.cpp.o
+
+.PHONY : src/person.o
+
+# target to build an object file
+src/person.cpp.o:
+	cd /home/dev-projects/game-backend-cpp/build && $(MAKE) $(MAKESILENT) -f backend/libraries/base/CMakeFiles/game-backend.dir/build.make backend/libraries/base/CMakeFiles/game-backend.dir/src/person.cpp.o
+.PHONY : src/person.cpp.o
+
+src/person.i: src/person.cpp.i
+
+.PHONY : src/person.i
+
+# target to preprocess a source file
+src/person.cpp.i:
+	cd /home/dev-projects/game-backend-cpp/build && $(MAKE) $(MAKESILENT) -f backend/libraries/base/CMakeFiles/game-backend.dir/build.make backend/libraries/base/CMakeFiles/game-backend.dir/src/person.cpp.i
+.PHONY : src/person.cpp.i
+
+src/person.s: src/person.cpp.s
+
+.PHONY : src/person.s
+
+# target to generate assembly for a file
+src/person.cpp.s:
+	cd /home/dev-projects/game-backend-cpp/build && $(MAKE) $(MAKESILENT) -f backend/libraries/base/CMakeFiles/game-backend.dir/build.make backend/libraries/base/CMakeFiles/game-backend.dir/src/person.cpp.s
+.PHONY : src/person.cpp.s
 
 # Help Target
 help:
@@ -178,11 +278,21 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... base"
-	@echo "... src/base.o"
-	@echo "... src/base.i"
-	@echo "... src/base.s"
+	@echo "... game-backend"
+	@echo "... src/main-lobby.o"
+	@echo "... src/main-lobby.i"
+	@echo "... src/main-lobby.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
+	@echo "... src/person.o"
+	@echo "... src/person.i"
+	@echo "... src/person.s"
 .PHONY : help
 
 

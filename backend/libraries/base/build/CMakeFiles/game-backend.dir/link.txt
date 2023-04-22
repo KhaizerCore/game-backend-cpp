@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/game-backend.dir/src/main.o CMakeFiles/game-backend.dir/src/main-lobby.o CMakeFiles/game-backend.dir/src/person.o -o game-backend  -luuid_v4 

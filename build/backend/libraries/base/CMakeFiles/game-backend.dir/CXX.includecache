@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../backend/libraries/base/include/main-lobby.h
+mutex
+-
+vector
+-
+string
+-
+person.h
+-
+
+../backend/libraries/base/include/person.h
+string
+-
+
+/home/dev-projects/game-backend-cpp/backend/libraries/base/src/main.cpp
+string
+-
+iostream
+-
+vector
+-
+main-lobby.h
+-
+person.h
+-
+

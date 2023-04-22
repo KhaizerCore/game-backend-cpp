@@ -1,0 +1,2 @@
+/usr/bin/ar qc libuuid_v4.a CMakeFiles/uuid_v4.dir/example.cpp.o
+/usr/bin/ranlib libuuid_v4.a

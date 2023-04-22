@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/game.dir/src/backend.cpp.o CMakeFiles/game.dir/src/main-lobby.cpp.o CMakeFiles/game.dir/src/person.cpp.o -o game 
