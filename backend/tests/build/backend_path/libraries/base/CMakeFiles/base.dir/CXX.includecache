@@ -66,7 +66,7 @@ immintrin.h
 endianness.h
 ../../shared/utils/uuid_v4/endianness.h
 
-/home/dev-projects/game-backend-cpp/backend/libraries/base/src/main-lobby.cpp
+/home/game-backend-cpp/backend/libraries/base/src/main-lobby.cpp
 iostream
 -
 main-lobby.h
@@ -74,7 +74,7 @@ main-lobby.h
 person.h
 -
 
-/home/dev-projects/game-backend-cpp/backend/libraries/base/src/main.cpp
+/home/game-backend-cpp/backend/libraries/base/src/main.cpp
 string
 -
 iostream
@@ -86,7 +86,7 @@ main-lobby.h
 person.h
 -
 
-/home/dev-projects/game-backend-cpp/backend/libraries/base/src/person.cpp
+/home/game-backend-cpp/backend/libraries/base/src/person.cpp
 person.h
 -
 iostream

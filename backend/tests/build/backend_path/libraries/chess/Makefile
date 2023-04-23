@@ -67,10 +67,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dev-projects/game-backend-cpp/backend/tests
+CMAKE_SOURCE_DIR = /home/game-backend-cpp/backend/tests
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dev-projects/game-backend-cpp/backend/tests/build
+CMAKE_BINARY_DIR = /home/game-backend-cpp/backend/tests/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -145,14 +145,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/dev-projects/game-backend-cpp/backend/tests/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/dev-projects/game-backend-cpp/backend/tests/build/CMakeFiles /home/dev-projects/game-backend-cpp/backend/tests/build/backend_path/libraries/chess//CMakeFiles/progress.marks
-	cd /home/dev-projects/game-backend-cpp/backend/tests/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 backend_path/libraries/chess/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dev-projects/game-backend-cpp/backend/tests/build/CMakeFiles 0
+	cd /home/game-backend-cpp/backend/tests/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/game-backend-cpp/backend/tests/build/CMakeFiles /home/game-backend-cpp/backend/tests/build/backend_path/libraries/chess//CMakeFiles/progress.marks
+	cd /home/game-backend-cpp/backend/tests/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 backend_path/libraries/chess/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/game-backend-cpp/backend/tests/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/dev-projects/game-backend-cpp/backend/tests/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 backend_path/libraries/chess/clean
+	cd /home/game-backend-cpp/backend/tests/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 backend_path/libraries/chess/clean
 .PHONY : clean
 
 # The main clean target
@@ -162,22 +162,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/dev-projects/game-backend-cpp/backend/tests/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 backend_path/libraries/chess/preinstall
+	cd /home/game-backend-cpp/backend/tests/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 backend_path/libraries/chess/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/dev-projects/game-backend-cpp/backend/tests/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 backend_path/libraries/chess/preinstall
+	cd /home/game-backend-cpp/backend/tests/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 backend_path/libraries/chess/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/dev-projects/game-backend-cpp/backend/tests/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/game-backend-cpp/backend/tests/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 backend_path/libraries/chess/CMakeFiles/chess.dir/rule:
-	cd /home/dev-projects/game-backend-cpp/backend/tests/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 backend_path/libraries/chess/CMakeFiles/chess.dir/rule
+	cd /home/game-backend-cpp/backend/tests/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 backend_path/libraries/chess/CMakeFiles/chess.dir/rule
 .PHONY : backend_path/libraries/chess/CMakeFiles/chess.dir/rule
 
 # Convenience name for target.
@@ -187,7 +187,7 @@ chess: backend_path/libraries/chess/CMakeFiles/chess.dir/rule
 
 # fast build rule for target.
 chess/fast:
-	cd /home/dev-projects/game-backend-cpp/backend/tests/build && $(MAKE) $(MAKESILENT) -f backend_path/libraries/chess/CMakeFiles/chess.dir/build.make backend_path/libraries/chess/CMakeFiles/chess.dir/build
+	cd /home/game-backend-cpp/backend/tests/build && $(MAKE) $(MAKESILENT) -f backend_path/libraries/chess/CMakeFiles/chess.dir/build.make backend_path/libraries/chess/CMakeFiles/chess.dir/build
 .PHONY : chess/fast
 
 src/board.o: src/board.cpp.o
@@ -196,7 +196,7 @@ src/board.o: src/board.cpp.o
 
 # target to build an object file
 src/board.cpp.o:
-	cd /home/dev-projects/game-backend-cpp/backend/tests/build && $(MAKE) $(MAKESILENT) -f backend_path/libraries/chess/CMakeFiles/chess.dir/build.make backend_path/libraries/chess/CMakeFiles/chess.dir/src/board.cpp.o
+	cd /home/game-backend-cpp/backend/tests/build && $(MAKE) $(MAKESILENT) -f backend_path/libraries/chess/CMakeFiles/chess.dir/build.make backend_path/libraries/chess/CMakeFiles/chess.dir/src/board.cpp.o
 .PHONY : src/board.cpp.o
 
 src/board.i: src/board.cpp.i
@@ -205,7 +205,7 @@ src/board.i: src/board.cpp.i
 
 # target to preprocess a source file
 src/board.cpp.i:
-	cd /home/dev-projects/game-backend-cpp/backend/tests/build && $(MAKE) $(MAKESILENT) -f backend_path/libraries/chess/CMakeFiles/chess.dir/build.make backend_path/libraries/chess/CMakeFiles/chess.dir/src/board.cpp.i
+	cd /home/game-backend-cpp/backend/tests/build && $(MAKE) $(MAKESILENT) -f backend_path/libraries/chess/CMakeFiles/chess.dir/build.make backend_path/libraries/chess/CMakeFiles/chess.dir/src/board.cpp.i
 .PHONY : src/board.cpp.i
 
 src/board.s: src/board.cpp.s
@@ -214,7 +214,7 @@ src/board.s: src/board.cpp.s
 
 # target to generate assembly for a file
 src/board.cpp.s:
-	cd /home/dev-projects/game-backend-cpp/backend/tests/build && $(MAKE) $(MAKESILENT) -f backend_path/libraries/chess/CMakeFiles/chess.dir/build.make backend_path/libraries/chess/CMakeFiles/chess.dir/src/board.cpp.s
+	cd /home/game-backend-cpp/backend/tests/build && $(MAKE) $(MAKESILENT) -f backend_path/libraries/chess/CMakeFiles/chess.dir/build.make backend_path/libraries/chess/CMakeFiles/chess.dir/src/board.cpp.s
 .PHONY : src/board.cpp.s
 
 src/match.o: src/match.cpp.o
@@ -223,7 +223,7 @@ src/match.o: src/match.cpp.o
 
 # target to build an object file
 src/match.cpp.o:
-	cd /home/dev-projects/game-backend-cpp/backend/tests/build && $(MAKE) $(MAKESILENT) -f backend_path/libraries/chess/CMakeFiles/chess.dir/build.make backend_path/libraries/chess/CMakeFiles/chess.dir/src/match.cpp.o
+	cd /home/game-backend-cpp/backend/tests/build && $(MAKE) $(MAKESILENT) -f backend_path/libraries/chess/CMakeFiles/chess.dir/build.make backend_path/libraries/chess/CMakeFiles/chess.dir/src/match.cpp.o
 .PHONY : src/match.cpp.o
 
 src/match.i: src/match.cpp.i
@@ -232,7 +232,7 @@ src/match.i: src/match.cpp.i
 
 # target to preprocess a source file
 src/match.cpp.i:
-	cd /home/dev-projects/game-backend-cpp/backend/tests/build && $(MAKE) $(MAKESILENT) -f backend_path/libraries/chess/CMakeFiles/chess.dir/build.make backend_path/libraries/chess/CMakeFiles/chess.dir/src/match.cpp.i
+	cd /home/game-backend-cpp/backend/tests/build && $(MAKE) $(MAKESILENT) -f backend_path/libraries/chess/CMakeFiles/chess.dir/build.make backend_path/libraries/chess/CMakeFiles/chess.dir/src/match.cpp.i
 .PHONY : src/match.cpp.i
 
 src/match.s: src/match.cpp.s
@@ -241,7 +241,7 @@ src/match.s: src/match.cpp.s
 
 # target to generate assembly for a file
 src/match.cpp.s:
-	cd /home/dev-projects/game-backend-cpp/backend/tests/build && $(MAKE) $(MAKESILENT) -f backend_path/libraries/chess/CMakeFiles/chess.dir/build.make backend_path/libraries/chess/CMakeFiles/chess.dir/src/match.cpp.s
+	cd /home/game-backend-cpp/backend/tests/build && $(MAKE) $(MAKESILENT) -f backend_path/libraries/chess/CMakeFiles/chess.dir/build.make backend_path/libraries/chess/CMakeFiles/chess.dir/src/match.cpp.s
 .PHONY : src/match.cpp.s
 
 src/piece.o: src/piece.cpp.o
@@ -250,7 +250,7 @@ src/piece.o: src/piece.cpp.o
 
 # target to build an object file
 src/piece.cpp.o:
-	cd /home/dev-projects/game-backend-cpp/backend/tests/build && $(MAKE) $(MAKESILENT) -f backend_path/libraries/chess/CMakeFiles/chess.dir/build.make backend_path/libraries/chess/CMakeFiles/chess.dir/src/piece.cpp.o
+	cd /home/game-backend-cpp/backend/tests/build && $(MAKE) $(MAKESILENT) -f backend_path/libraries/chess/CMakeFiles/chess.dir/build.make backend_path/libraries/chess/CMakeFiles/chess.dir/src/piece.cpp.o
 .PHONY : src/piece.cpp.o
 
 src/piece.i: src/piece.cpp.i
@@ -259,7 +259,7 @@ src/piece.i: src/piece.cpp.i
 
 # target to preprocess a source file
 src/piece.cpp.i:
-	cd /home/dev-projects/game-backend-cpp/backend/tests/build && $(MAKE) $(MAKESILENT) -f backend_path/libraries/chess/CMakeFiles/chess.dir/build.make backend_path/libraries/chess/CMakeFiles/chess.dir/src/piece.cpp.i
+	cd /home/game-backend-cpp/backend/tests/build && $(MAKE) $(MAKESILENT) -f backend_path/libraries/chess/CMakeFiles/chess.dir/build.make backend_path/libraries/chess/CMakeFiles/chess.dir/src/piece.cpp.i
 .PHONY : src/piece.cpp.i
 
 src/piece.s: src/piece.cpp.s
@@ -268,7 +268,7 @@ src/piece.s: src/piece.cpp.s
 
 # target to generate assembly for a file
 src/piece.cpp.s:
-	cd /home/dev-projects/game-backend-cpp/backend/tests/build && $(MAKE) $(MAKESILENT) -f backend_path/libraries/chess/CMakeFiles/chess.dir/build.make backend_path/libraries/chess/CMakeFiles/chess.dir/src/piece.cpp.s
+	cd /home/game-backend-cpp/backend/tests/build && $(MAKE) $(MAKESILENT) -f backend_path/libraries/chess/CMakeFiles/chess.dir/build.make backend_path/libraries/chess/CMakeFiles/chess.dir/src/piece.cpp.s
 .PHONY : src/piece.cpp.s
 
 # Help Target
@@ -304,6 +304,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/dev-projects/game-backend-cpp/backend/tests/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/game-backend-cpp/backend/tests/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

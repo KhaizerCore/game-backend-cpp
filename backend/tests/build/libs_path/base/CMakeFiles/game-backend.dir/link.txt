@@ -1,2 +1,0 @@
-/usr/bin/ar qc libgame-backend.a CMakeFiles/game-backend.dir/src/main.cpp.o CMakeFiles/game-backend.dir/src/main-lobby.cpp.o CMakeFiles/game-backend.dir/src/person.cpp.o
-/usr/bin/ranlib libgame-backend.a

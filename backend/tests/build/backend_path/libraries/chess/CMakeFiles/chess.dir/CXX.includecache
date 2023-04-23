@@ -26,9 +26,19 @@ board.h
 
 ../../libraries/chess/include/piece.h
 
-/home/dev-projects/game-backend-cpp/backend/libraries/chess/src/match.cpp
+/home/game-backend-cpp/backend/libraries/chess/src/board.cpp
+board.h
+-
+iostream
+-
+
+/home/game-backend-cpp/backend/libraries/chess/src/match.cpp
 match.h
 -
 iostream
+-
+
+/home/game-backend-cpp/backend/libraries/chess/src/piece.cpp
+piece.h
 -
 

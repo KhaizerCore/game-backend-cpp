@@ -67,10 +67,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dev-projects/game-backend-cpp/backend/tests
+CMAKE_SOURCE_DIR = /home/game-backend-cpp/backend/tests
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dev-projects/game-backend-cpp/backend/tests/build
+CMAKE_BINARY_DIR = /home/game-backend-cpp/backend/tests/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -145,14 +145,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/dev-projects/game-backend-cpp/backend/tests/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/dev-projects/game-backend-cpp/backend/tests/build/CMakeFiles /home/dev-projects/game-backend-cpp/backend/tests/build/backend_path/shared/utils/uuid_v4//CMakeFiles/progress.marks
-	cd /home/dev-projects/game-backend-cpp/backend/tests/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 backend_path/shared/utils/uuid_v4/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dev-projects/game-backend-cpp/backend/tests/build/CMakeFiles 0
+	cd /home/game-backend-cpp/backend/tests/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/game-backend-cpp/backend/tests/build/CMakeFiles /home/game-backend-cpp/backend/tests/build/backend_path/shared/utils/uuid_v4//CMakeFiles/progress.marks
+	cd /home/game-backend-cpp/backend/tests/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 backend_path/shared/utils/uuid_v4/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/game-backend-cpp/backend/tests/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/dev-projects/game-backend-cpp/backend/tests/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 backend_path/shared/utils/uuid_v4/clean
+	cd /home/game-backend-cpp/backend/tests/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 backend_path/shared/utils/uuid_v4/clean
 .PHONY : clean
 
 # The main clean target
@@ -162,22 +162,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/dev-projects/game-backend-cpp/backend/tests/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 backend_path/shared/utils/uuid_v4/preinstall
+	cd /home/game-backend-cpp/backend/tests/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 backend_path/shared/utils/uuid_v4/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/dev-projects/game-backend-cpp/backend/tests/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 backend_path/shared/utils/uuid_v4/preinstall
+	cd /home/game-backend-cpp/backend/tests/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 backend_path/shared/utils/uuid_v4/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/dev-projects/game-backend-cpp/backend/tests/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/game-backend-cpp/backend/tests/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 backend_path/shared/utils/uuid_v4/CMakeFiles/example.dir/rule:
-	cd /home/dev-projects/game-backend-cpp/backend/tests/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 backend_path/shared/utils/uuid_v4/CMakeFiles/example.dir/rule
+	cd /home/game-backend-cpp/backend/tests/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 backend_path/shared/utils/uuid_v4/CMakeFiles/example.dir/rule
 .PHONY : backend_path/shared/utils/uuid_v4/CMakeFiles/example.dir/rule
 
 # Convenience name for target.
@@ -187,7 +187,7 @@ example: backend_path/shared/utils/uuid_v4/CMakeFiles/example.dir/rule
 
 # fast build rule for target.
 example/fast:
-	cd /home/dev-projects/game-backend-cpp/backend/tests/build && $(MAKE) $(MAKESILENT) -f backend_path/shared/utils/uuid_v4/CMakeFiles/example.dir/build.make backend_path/shared/utils/uuid_v4/CMakeFiles/example.dir/build
+	cd /home/game-backend-cpp/backend/tests/build && $(MAKE) $(MAKESILENT) -f backend_path/shared/utils/uuid_v4/CMakeFiles/example.dir/build.make backend_path/shared/utils/uuid_v4/CMakeFiles/example.dir/build
 .PHONY : example/fast
 
 example.o: example.cpp.o
@@ -196,7 +196,7 @@ example.o: example.cpp.o
 
 # target to build an object file
 example.cpp.o:
-	cd /home/dev-projects/game-backend-cpp/backend/tests/build && $(MAKE) $(MAKESILENT) -f backend_path/shared/utils/uuid_v4/CMakeFiles/example.dir/build.make backend_path/shared/utils/uuid_v4/CMakeFiles/example.dir/example.cpp.o
+	cd /home/game-backend-cpp/backend/tests/build && $(MAKE) $(MAKESILENT) -f backend_path/shared/utils/uuid_v4/CMakeFiles/example.dir/build.make backend_path/shared/utils/uuid_v4/CMakeFiles/example.dir/example.cpp.o
 .PHONY : example.cpp.o
 
 example.i: example.cpp.i
@@ -205,7 +205,7 @@ example.i: example.cpp.i
 
 # target to preprocess a source file
 example.cpp.i:
-	cd /home/dev-projects/game-backend-cpp/backend/tests/build && $(MAKE) $(MAKESILENT) -f backend_path/shared/utils/uuid_v4/CMakeFiles/example.dir/build.make backend_path/shared/utils/uuid_v4/CMakeFiles/example.dir/example.cpp.i
+	cd /home/game-backend-cpp/backend/tests/build && $(MAKE) $(MAKESILENT) -f backend_path/shared/utils/uuid_v4/CMakeFiles/example.dir/build.make backend_path/shared/utils/uuid_v4/CMakeFiles/example.dir/example.cpp.i
 .PHONY : example.cpp.i
 
 example.s: example.cpp.s
@@ -214,7 +214,7 @@ example.s: example.cpp.s
 
 # target to generate assembly for a file
 example.cpp.s:
-	cd /home/dev-projects/game-backend-cpp/backend/tests/build && $(MAKE) $(MAKESILENT) -f backend_path/shared/utils/uuid_v4/CMakeFiles/example.dir/build.make backend_path/shared/utils/uuid_v4/CMakeFiles/example.dir/example.cpp.s
+	cd /home/game-backend-cpp/backend/tests/build && $(MAKE) $(MAKESILENT) -f backend_path/shared/utils/uuid_v4/CMakeFiles/example.dir/build.make backend_path/shared/utils/uuid_v4/CMakeFiles/example.dir/example.cpp.s
 .PHONY : example.cpp.s
 
 # Help Target
@@ -244,6 +244,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/dev-projects/game-backend-cpp/backend/tests/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/game-backend-cpp/backend/tests/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
