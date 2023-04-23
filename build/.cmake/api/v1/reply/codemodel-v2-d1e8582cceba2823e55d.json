@@ -1,0 +1,185 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "backend",
+					"childIndexes" : 
+					[
+						2,
+						5
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "backend"
+				},
+				{
+					"build" : "backend/libraries",
+					"childIndexes" : 
+					[
+						3,
+						4
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "backend/libraries"
+				},
+				{
+					"build" : "backend/libraries/base",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "backend/libraries/base",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "backend/libraries/chess",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "backend/libraries/chess",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "backend/shared/utils",
+					"childIndexes" : 
+					[
+						6
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "backend/shared/utils"
+				},
+				{
+					"build" : "backend/shared/utils/uuid_v4",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 1,
+					"source" : "backend/shared/utils/uuid_v4",
+					"targetIndexes" : 
+					[
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					],
+					"name" : "game-backend",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						6
+					],
+					"name" : "uuid_v4",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 3,
+					"id" : "base::@1ab4b22fc3d06717df6e",
+					"jsonFile" : "target-base-Debug-ac470a0f451011262f94.json",
+					"name" : "base",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "chess::@75f530d8603ddde16610",
+					"jsonFile" : "target-chess-Debug-2ab0056b64a3a49573a0.json",
+					"name" : "chess",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "example::@e5fc83a8d122e9c03d0e",
+					"jsonFile" : "target-example-Debug-1aa9f5cb8c7e11b114cc.json",
+					"name" : "example",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/dev-projects/game-backend-cpp/build",
+		"source" : "/home/dev-projects/game-backend-cpp"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 1
+	}
+}

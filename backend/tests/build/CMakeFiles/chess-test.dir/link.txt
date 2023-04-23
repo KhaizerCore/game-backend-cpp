@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/chess-test.dir/chess-test.cpp.o -o chess-test  backend_path/libraries/chess/libchess.a backend_path/libraries/base/libbase.a 

@@ -67,10 +67,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/game-backend-cpp
+CMAKE_SOURCE_DIR = /home/dev-projects/game-backend-cpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/game-backend-cpp/build
+CMAKE_BINARY_DIR = /home/dev-projects/game-backend-cpp/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -145,9 +145,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/game-backend-cpp/build/CMakeFiles /home/game-backend-cpp/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dev-projects/game-backend-cpp/build/CMakeFiles /home/dev-projects/game-backend-cpp/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/game-backend-cpp/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dev-projects/game-backend-cpp/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -176,17 +176,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named game-backend
+# Target rules for targets named base
 
 # Build rule for target.
-game-backend: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 game-backend
-.PHONY : game-backend
+base: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 base
+.PHONY : base
 
 # fast build rule for target.
-game-backend/fast:
-	$(MAKE) $(MAKESILENT) -f backend/libraries/base/CMakeFiles/game-backend.dir/build.make backend/libraries/base/CMakeFiles/game-backend.dir/build
-.PHONY : game-backend/fast
+base/fast:
+	$(MAKE) $(MAKESILENT) -f backend/libraries/base/CMakeFiles/base.dir/build.make backend/libraries/base/CMakeFiles/base.dir/build
+.PHONY : base/fast
 
 #=============================================================================
 # Target rules for targets named chess
@@ -226,9 +226,9 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... base"
 	@echo "... chess"
 	@echo "... example"
-	@echo "... game-backend"
 .PHONY : help
 
 

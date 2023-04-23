@@ -1,5 +1,8 @@
 #pragma once
 
+#define EMPTY -1
+
+
 typedef enum{
     KING,
     QUEEN,
@@ -14,11 +17,6 @@ typedef enum{
     WHITE
 }piece_color;
 
-typedef struct pieceInfo_t{
-    piece_type type;
-    piece_color color;
-}pieceInfo;
-
 class Piece{
     public:
         static Piece* newKing(int pos_x, int pos_y);
@@ -28,12 +26,14 @@ class Piece{
         static Piece* newBishop(int pos_x, int pos_y);
         static Piece* newPawn(int pos_x, int pos_y);
 
-
+        Piece* black();
+        Piece* white();
 
     private:
-        Piece(piece_type pieceType, int pos_x, int pos_y);
-        pieceInfo info;
-
+        Piece(piece_type type, int pos_x, int pos_y);
+        
+        piece_type type;
+        piece_color color;
 
         int pos_x;
         int pos_y;

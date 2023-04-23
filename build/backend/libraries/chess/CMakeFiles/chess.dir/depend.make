@@ -5,6 +5,9 @@ backend/libraries/chess/CMakeFiles/chess.dir/src/board.cpp.o: ../backend/librari
 backend/libraries/chess/CMakeFiles/chess.dir/src/board.cpp.o: ../backend/libraries/chess/include/piece.h
 backend/libraries/chess/CMakeFiles/chess.dir/src/board.cpp.o: ../backend/libraries/chess/src/board.cpp
 
+backend/libraries/chess/CMakeFiles/chess.dir/src/match.cpp.o: ../backend/libraries/chess/include/match.h
+backend/libraries/chess/CMakeFiles/chess.dir/src/match.cpp.o: ../backend/libraries/chess/src/match.cpp
+
 backend/libraries/chess/CMakeFiles/chess.dir/src/piece.cpp.o: ../backend/libraries/chess/include/piece.h
 backend/libraries/chess/CMakeFiles/chess.dir/src/piece.cpp.o: ../backend/libraries/chess/src/piece.cpp
 

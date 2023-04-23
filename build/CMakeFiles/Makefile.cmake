@@ -63,7 +63,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "backend/libraries/base/CMakeFiles/game-backend.dir/DependInfo.cmake"
+  "backend/libraries/base/CMakeFiles/base.dir/DependInfo.cmake"
   "backend/libraries/chess/CMakeFiles/chess.dir/DependInfo.cmake"
   "backend/shared/utils/uuid_v4/CMakeFiles/example.dir/DependInfo.cmake"
   )

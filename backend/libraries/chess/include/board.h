@@ -1,6 +1,7 @@
 #pragma once
 
 #include <vector>
+#include <utility>
 using namespace std;
 
 #include <piece.h>
@@ -15,5 +16,5 @@ class Board{
     private:
         Board();
         static int id;
-        vector<vector<Piece>> _board;
+        vector<vector<Piece *>> board_matrix;
 };

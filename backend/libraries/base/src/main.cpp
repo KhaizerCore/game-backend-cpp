@@ -5,6 +5,7 @@
 #include <main-lobby.h>
 #include <person.h>
 
+
 int main(){
     
     Lobby *lobby = new Lobby;
@@ -22,5 +23,7 @@ int main(){
         lobby->leave(p);
         lobby->leave(p);
     }
+
+    
 
 }

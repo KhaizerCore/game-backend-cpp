@@ -63,10 +63,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/game-backend-cpp
+CMAKE_SOURCE_DIR = /home/dev-projects/game-backend-cpp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/game-backend-cpp/build
+CMAKE_BINARY_DIR = /home/dev-projects/game-backend-cpp/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -132,7 +132,7 @@ backend/libraries/clean: backend/libraries/chess/clean
 # Directory level rules for directory backend/libraries/base
 
 # Recursive "all" directory target.
-backend/libraries/base/all: backend/libraries/base/CMakeFiles/game-backend.dir/all
+backend/libraries/base/all: backend/libraries/base/CMakeFiles/base.dir/all
 
 .PHONY : backend/libraries/base/all
 
@@ -142,7 +142,7 @@ backend/libraries/base/preinstall:
 .PHONY : backend/libraries/base/preinstall
 
 # Recursive "clean" directory target.
-backend/libraries/base/clean: backend/libraries/base/CMakeFiles/game-backend.dir/clean
+backend/libraries/base/clean: backend/libraries/base/CMakeFiles/base.dir/clean
 
 .PHONY : backend/libraries/base/clean
 
@@ -201,47 +201,47 @@ backend/shared/utils/uuid_v4/clean: backend/shared/utils/uuid_v4/CMakeFiles/exam
 .PHONY : backend/shared/utils/uuid_v4/clean
 
 #=============================================================================
-# Target rules for target backend/libraries/base/CMakeFiles/game-backend.dir
+# Target rules for target backend/libraries/base/CMakeFiles/base.dir
 
 # All Build rule for target.
-backend/libraries/base/CMakeFiles/game-backend.dir/all:
-	$(MAKE) $(MAKESILENT) -f backend/libraries/base/CMakeFiles/game-backend.dir/build.make backend/libraries/base/CMakeFiles/game-backend.dir/depend
-	$(MAKE) $(MAKESILENT) -f backend/libraries/base/CMakeFiles/game-backend.dir/build.make backend/libraries/base/CMakeFiles/game-backend.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/game-backend-cpp/build/CMakeFiles --progress-num=6,7,8,9 "Built target game-backend"
-.PHONY : backend/libraries/base/CMakeFiles/game-backend.dir/all
+backend/libraries/base/CMakeFiles/base.dir/all:
+	$(MAKE) $(MAKESILENT) -f backend/libraries/base/CMakeFiles/base.dir/build.make backend/libraries/base/CMakeFiles/base.dir/depend
+	$(MAKE) $(MAKESILENT) -f backend/libraries/base/CMakeFiles/base.dir/build.make backend/libraries/base/CMakeFiles/base.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dev-projects/game-backend-cpp/build/CMakeFiles --progress-num=1,2,3,4 "Built target base"
+.PHONY : backend/libraries/base/CMakeFiles/base.dir/all
 
 # Build rule for subdir invocation for target.
-backend/libraries/base/CMakeFiles/game-backend.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/game-backend-cpp/build/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 backend/libraries/base/CMakeFiles/game-backend.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/game-backend-cpp/build/CMakeFiles 0
-.PHONY : backend/libraries/base/CMakeFiles/game-backend.dir/rule
+backend/libraries/base/CMakeFiles/base.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dev-projects/game-backend-cpp/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 backend/libraries/base/CMakeFiles/base.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dev-projects/game-backend-cpp/build/CMakeFiles 0
+.PHONY : backend/libraries/base/CMakeFiles/base.dir/rule
 
 # Convenience name for target.
-game-backend: backend/libraries/base/CMakeFiles/game-backend.dir/rule
+base: backend/libraries/base/CMakeFiles/base.dir/rule
 
-.PHONY : game-backend
+.PHONY : base
 
 # clean rule for target.
-backend/libraries/base/CMakeFiles/game-backend.dir/clean:
-	$(MAKE) $(MAKESILENT) -f backend/libraries/base/CMakeFiles/game-backend.dir/build.make backend/libraries/base/CMakeFiles/game-backend.dir/clean
-.PHONY : backend/libraries/base/CMakeFiles/game-backend.dir/clean
+backend/libraries/base/CMakeFiles/base.dir/clean:
+	$(MAKE) $(MAKESILENT) -f backend/libraries/base/CMakeFiles/base.dir/build.make backend/libraries/base/CMakeFiles/base.dir/clean
+.PHONY : backend/libraries/base/CMakeFiles/base.dir/clean
 
 #=============================================================================
 # Target rules for target backend/libraries/chess/CMakeFiles/chess.dir
 
 # All Build rule for target.
-backend/libraries/chess/CMakeFiles/chess.dir/all:
+backend/libraries/chess/CMakeFiles/chess.dir/all: backend/libraries/base/CMakeFiles/base.dir/all
 	$(MAKE) $(MAKESILENT) -f backend/libraries/chess/CMakeFiles/chess.dir/build.make backend/libraries/chess/CMakeFiles/chess.dir/depend
 	$(MAKE) $(MAKESILENT) -f backend/libraries/chess/CMakeFiles/chess.dir/build.make backend/libraries/chess/CMakeFiles/chess.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/game-backend-cpp/build/CMakeFiles --progress-num=1,2,3 "Built target chess"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dev-projects/game-backend-cpp/build/CMakeFiles --progress-num=5,6,7,8 "Built target chess"
 .PHONY : backend/libraries/chess/CMakeFiles/chess.dir/all
 
 # Build rule for subdir invocation for target.
 backend/libraries/chess/CMakeFiles/chess.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/game-backend-cpp/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dev-projects/game-backend-cpp/build/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 backend/libraries/chess/CMakeFiles/chess.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/game-backend-cpp/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dev-projects/game-backend-cpp/build/CMakeFiles 0
 .PHONY : backend/libraries/chess/CMakeFiles/chess.dir/rule
 
 # Convenience name for target.
@@ -261,14 +261,14 @@ backend/libraries/chess/CMakeFiles/chess.dir/clean:
 backend/shared/utils/uuid_v4/CMakeFiles/example.dir/all:
 	$(MAKE) $(MAKESILENT) -f backend/shared/utils/uuid_v4/CMakeFiles/example.dir/build.make backend/shared/utils/uuid_v4/CMakeFiles/example.dir/depend
 	$(MAKE) $(MAKESILENT) -f backend/shared/utils/uuid_v4/CMakeFiles/example.dir/build.make backend/shared/utils/uuid_v4/CMakeFiles/example.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/game-backend-cpp/build/CMakeFiles --progress-num=4,5 "Built target example"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/dev-projects/game-backend-cpp/build/CMakeFiles --progress-num=9,10 "Built target example"
 .PHONY : backend/shared/utils/uuid_v4/CMakeFiles/example.dir/all
 
 # Build rule for subdir invocation for target.
 backend/shared/utils/uuid_v4/CMakeFiles/example.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/game-backend-cpp/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dev-projects/game-backend-cpp/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 backend/shared/utils/uuid_v4/CMakeFiles/example.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/game-backend-cpp/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dev-projects/game-backend-cpp/build/CMakeFiles 0
 .PHONY : backend/shared/utils/uuid_v4/CMakeFiles/example.dir/rule
 
 # Convenience name for target.
