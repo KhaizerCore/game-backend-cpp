@@ -23,12 +23,14 @@ Board* Board::newEmptyBoard(){
         {{ROOK, WHITE}, {KNIGHT, WHITE}, {BISHOP, WHITE}, {QUEEN, WHITE}, {KING, WHITE}, {BISHOP, WHITE}, {KNIGHT, WHITE}, {ROOK, WHITE}}
     };
 
-    for (int y = 0; y < CHESS_TABLE_DIMENSION_Y; y++){
-        
+    for (int y = board_initial_conditions.size() - 1; y >= 0 ; y--){   
         vector<Piece *> empty_vector = {};
         board->board_matrix.push_back(empty_vector);
+    }
 
-        for (int x = 0; x < CHESS_TABLE_DIMENSION_X; x++){
+    cout << "INVERTED BOARD" << endl;
+    for (int y = board_initial_conditions.size() - 1; y >= 0 ; y--){        
+        for (int x = 0; x < board_initial_conditions[y].size(); x++){
             pair<int, int> position_condition = board_initial_conditions[y][x];
 
             cout << "{" << position_condition.first << ", " << position_condition.second << "} ";
@@ -99,13 +101,19 @@ Board* Board::newEmptyBoard(){
     return board;
 }
 
-    // vector<vector<int>> board_pieces = {
-    //     {(ROOK, BLACK), KNIGHT, BLACK), BISHOP, BLACK), QUEEN, BLACK), KING, BLACK), BISHOP, BLACK), KNIGHT, BLACK), ROOK, BLACK)},
-    //     {PAWN, PAWN, PAWN, PAWN, PAWN, PAWN, PAWN, PAWN},
-    //     {NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL},
-    //     {NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL},
-    //     {NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL},
-    //     {NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL},
-    //     {PAWN, PAWN, PAWN, PAWN, PAWN, PAWN, PAWN, PAWN},
-    //     {ROOK, KNIGHT, BISHOP, QUEEN, KING, BISHOP, KNIGHT, ROOK}
-    // };
+void Board::printBoard(){
+
+    for (int y = this->board_matrix.size() - 1; i >= 0; y--){
+
+        for (int x = 0; x < this->board_matrix[y].size(); x++){
+            
+            Piece * piece = this->board_matrix[y][x];
+
+
+            cout << "| " <<  piece->
+
+        }
+
+    }
+
+}

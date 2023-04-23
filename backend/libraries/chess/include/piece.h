@@ -12,6 +12,26 @@ typedef enum{
     PAWN
 }piece_type;
 
+static const char * const white_piece_symbols[] = {
+    [KING] = "♚",
+    [QUEEN] = "♛",
+    [ROOK] = "♜",
+    [KNIGHT] = "♞",
+    [BISHOP] = "♝",
+    [PAWN] = "♟︎"
+};
+
+static const char * const black_piece_symbols[] = {
+    [KING] = "♔",
+    [QUEEN] = "♕",
+    [ROOK] = "♖",
+    [KNIGHT] = "♘",
+    [BISHOP] = "♗",
+    [PAWN] = "♙"
+};
+
+static const char * empty_symbol = "🨢";
+
 typedef enum{
     BLACK,
     WHITE

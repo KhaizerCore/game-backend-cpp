@@ -12,6 +12,7 @@ using namespace std;
 class Board{
     public:
         static Board * newEmptyBoard();
+        void printBoard();
 
     private:
         Board();
