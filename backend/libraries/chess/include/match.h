@@ -9,12 +9,13 @@ class Match{
     public:
         Match();
 
+        Board *board;
         
     private:
-        Person playerWhites(string username);
-        Person playerBlacks(string username);
+        Person *playerWhites;
+        Person *playerBlacks;
 
         
 
-        Board *board;
+        
 };

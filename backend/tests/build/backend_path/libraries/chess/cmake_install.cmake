@@ -1,4 +1,4 @@
-# Install script for directory: /home/game-backend-cpp/backend/libraries/chess
+# Install script for directory: /home/dev-projects/game-backend-cpp/backend/libraries/chess
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

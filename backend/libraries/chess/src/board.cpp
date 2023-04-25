@@ -40,27 +40,27 @@ Board* Board::newEmptyBoard(){
             switch (position_condition.first)
             {
                 case ROOK:
-                    piece = Piece::newRook(0, 0); 
+                    piece = Piece::newRook(); 
                 break;
                 
                 case KNIGHT:
-                    piece = Piece::newKnight(0, 0); 
+                    piece = Piece::newKnight(); 
                 break;
 
                 case BISHOP:
-                    piece = Piece::newBishop(0, 0); 
+                    piece = Piece::newBishop(); 
                 break;
 
                 case QUEEN:
-                    piece = Piece::newQueen(0, 0); 
+                    piece = Piece::newQueen(); 
                 break;
 
                 case KING:
-                    piece = Piece::newKing(0, 0); 
+                    piece = Piece::newKing(); 
                 break;
 
                 case PAWN:
-                    piece = Piece::newPawn(0, 0); 
+                    piece = Piece::newPawn(); 
                 break;
 
                 case EMPTY:
@@ -103,17 +103,31 @@ Board* Board::newEmptyBoard(){
 
 void Board::printBoard(){
 
-    for (int y = this->board_matrix.size() - 1; i >= 0; y--){
-
+    for (int y = this->board_matrix.size() - 1; y >= 0; y--){
         for (int x = 0; x < this->board_matrix[y].size(); x++){
-            
-            Piece * piece = this->board_matrix[y][x];
-
-
-            cout << "| " <<  piece->
-
+            if (NULL != this->board_matrix[y][x]){
+                Piece * piece = this->board_matrix[y][x];
+                cout << "| " << piece->getSymbol() << " | ";
+            }else{
+                cout << "| " << " " << " | ";
+            }
         }
-
+        cout << endl << endl;
     }
+}
 
+bool Board::pieceInPositionExists(position pos){
+    return this->board_matrix[pos.y][pos.x] != NULL;
+}
+
+bool Board::opponentInPosition(piece_color mover_color, position pos){
+    if (this->board_matrix[pos.y][pos.x] == NULL) { return false; }
+    if (this->board_matrix[pos.y][pos.x]->getColor() == mover_color) { return false; }
+    return true;
+}
+
+bool Board::friendlyInPosition(piece_color mover_color, position pos){
+    if (this->board_matrix[pos.y][pos.x] == NULL) { return false; }
+    if (this->board_matrix[pos.y][pos.x]->getColor() != mover_color) { return false; }
+    return true;
 }

@@ -2,39 +2,58 @@
 
 using namespace std;
 
-Piece::Piece(piece_type type, int pos_x, int pos_y){
+const char * const Piece::white_piece_symbols[] = {
+    [KING] = "♚",
+    [QUEEN] = "♛",
+    [ROOK] = "♜",
+    [KNIGHT] = "♞",
+    [BISHOP] = "♝",
+    [PAWN] = "♟︎"
+};
+
+const char * const Piece::black_piece_symbols[] = {
+    [KING] = "♔",
+    [QUEEN] = "♕",
+    [ROOK] = "♖",
+    [KNIGHT] = "♘",
+    [BISHOP] = "♗",
+    [PAWN] = "♙"
+};
+
+const char * Piece::empty_symbol = "🨢";
+
+Piece::Piece(piece_type type){
     this->type = type;
-    this->pos_x = pos_x;
-    this->pos_y = pos_y;
+    this->everMoved = false;
 }
 
-Piece* Piece::newKing(int pos_x, int pos_y){
-    Piece * piece = new Piece(KING, pos_x, pos_y);
+Piece* Piece::newKing(){
+    Piece * piece = new Piece(KING);
     return piece;
 }
 
-Piece* Piece::newQueen(int pos_x, int pos_y){
-    Piece * piece = new Piece(QUEEN, pos_x, pos_y);
+Piece* Piece::newQueen(){
+    Piece * piece = new Piece(QUEEN);
     return piece;
 }
 
-Piece* Piece::newRook(int pos_x, int pos_y){
-    Piece * piece = new Piece(ROOK, pos_x, pos_y);    
+Piece* Piece::newRook(){
+    Piece * piece = new Piece(ROOK);    
     return piece;
 }
 
-Piece* Piece::newKnight(int pos_x, int pos_y){
-    Piece * piece = new Piece(KNIGHT, pos_x, pos_y);
+Piece* Piece::newKnight(){
+    Piece * piece = new Piece(KNIGHT);
     return piece;
 }
 
-Piece* Piece::newBishop(int pos_x, int pos_y){
-    Piece * piece = new Piece(BISHOP, pos_x, pos_y);
+Piece* Piece::newBishop(){
+    Piece * piece = new Piece(BISHOP);
     return piece;
 }
 
-Piece* Piece::newPawn(int pos_x, int pos_y){
-    Piece * piece = new Piece(PAWN, pos_x, pos_y);
+Piece* Piece::newPawn(){
+    Piece * piece = new Piece(PAWN);
     return piece;
 }
 
@@ -47,4 +66,123 @@ Piece* Piece::black(){
 Piece* Piece::white(){
     this->color = WHITE;
     return this;
+}
+
+bool Piece::isBlack(){
+    return this->color == BLACK;
+}
+
+bool Piece::isWhite(){
+    return this->color == WHITE;
+}
+
+piece_color Piece::getColor(){
+    return this->color;
+}
+
+char * Piece::getSymbol(){
+    char * symbol;
+
+    if (this->isWhite()){
+        symbol = (char*)malloc(sizeof(white_piece_symbols[this->type]));
+        if (NULL == symbol){ cout << "malloc error - [1]"; return NULL; }
+        memcpy(symbol, white_piece_symbols[this->type], sizeof(white_piece_symbols[this->type]));
+    }else if (this->isBlack()){
+        symbol = (char*)malloc(sizeof(black_piece_symbols[this->type]));
+        if (NULL == symbol){ cout << "malloc error - [1]"; return NULL; }
+        memcpy(symbol, black_piece_symbols[this->type], sizeof(black_piece_symbols[this->type]));
+    }else{
+        cout << "Piece color error" << endl;
+        return NULL;
+    }
+
+    return symbol;
+}  
+
+bool Piece::hasEverMoved(){
+    return this->everMoved;
+}
+
+/**
+ * Will get overriden
+*/
+bool Piece::validateMovement(Board * board, position initial_position,  position final_position){
+    return false;
+}
+
+King::King():Piece(KING){};
+bool King::validateMovement(Board * board, position initial_position,  position final_position){
+
+}
+
+
+Queen::Queen():Piece(QUEEN){};
+bool Queen::validateMovement(Board * board, position initial_position,  position final_position){
+
+}
+
+
+Rook::Rook():Piece(ROOK){};
+bool Rook::validateMovement(Board * board, position initial_position,  position final_position){
+
+}
+
+
+Knight::Knight():Piece(KNIGHT){};
+bool Knight::validateMovement(Board * board, position initial_position,  position final_position){
+    int dx = final_position.x - initial_position.x;
+    int dy = final_position.y - initial_position.y;
+
+    if (board->friendlyInPosition(this->getColor(), final_position)) { return false; }
+
+    if (dx > 0 && dy == 0){
+        for (int x = initial_position.x + 1; x < final_position.x; x++){
+            if (board->pieceInPositionExists(position{.x = x, .y = final_position.y})){ return false; }
+        }
+        return true;
+    }else if (dx < 0 && dy == 0){
+        for (int x = initial_position.x - 1; x > final_position.x; x--){
+            if (board->pieceInPositionExists(position{.x = x, .y = final_position.y})){ return false; }
+        }
+        return true;
+    }else if (dy > 0 && dx == 0){
+        for (int y = initial_position.y + 1; y < final_position.y; y++){
+            if (board->pieceInPositionExists(position{.x = final_position.x, .y = y})){ return false; }
+        }
+        return true;
+    }else if (dy < 0 && dx == 0){
+        for (int y = initial_position.y - 1; y > final_position.y; y--){
+            if (board->pieceInPositionExists(position{.x = final_position.x, .y = y})){ return false; }
+        }
+        return true;
+    }
+    return false;
+}
+
+
+Bishop::Bishop():Piece(BISHOP){};
+bool Bishop::validateMovement(Board * board, position initial_position,  position final_position){
+
+}
+
+
+Pawn::Pawn():Piece(PAWN){};
+bool Pawn::validateMovement(Board * board, position initial_position,  position final_position){
+
+    int dx = final_position.x - initial_position.x;
+    int dy = final_position.y - initial_position.y;
+
+    // se movimentar 1 casa para frente, nao pode ter peça
+    if (dy == (this->isWhite() ? 1 : -1) && dx == 0 && !board->pieceInPositionExists(final_position)) { return true; }
+    // se movimentar 2 casas para frente, nao pode ter peça na primeira nem na segunda casa e tem que ser o primeiro lance do peao
+    if (dy == (this->isWhite() ? 2 : -2) && dx == 0 && 
+        !board->pieceInPositionExists(position{.x = final_position.x, .y = final_position.y + (this->isWhite() ? -1 : 1)}) &&
+        !board->pieceInPositionExists(final_position) &&
+        !this->hasEverMoved()
+    ) { return true; }
+    // se movimentar com dy == 1 e dx == +- 1 e na posição final existir um inimigo, então é valido (captura)
+    if (dy == (this->isWhite() ? 1 : -1) && abs(dx) == 1 && board->opponentInPosition(this->getColor(), final_position)) { return true; }
+    // Neste caso, o movimento nao se encaixou em nenhum padrão válido.
+    return false; 
+
 }

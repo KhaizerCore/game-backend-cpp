@@ -67,10 +67,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/game-backend-cpp/backend/tests
+CMAKE_SOURCE_DIR = /home/dev-projects/game-backend-cpp/backend/tests
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/game-backend-cpp/backend/tests/build
+CMAKE_BINARY_DIR = /home/dev-projects/game-backend-cpp/backend/tests/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -145,14 +145,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/game-backend-cpp/backend/tests/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/game-backend-cpp/backend/tests/build/CMakeFiles /home/game-backend-cpp/backend/tests/build/backend_path/shared/utils//CMakeFiles/progress.marks
-	cd /home/game-backend-cpp/backend/tests/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 backend_path/shared/utils/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/game-backend-cpp/backend/tests/build/CMakeFiles 0
+	cd /home/dev-projects/game-backend-cpp/backend/tests/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/dev-projects/game-backend-cpp/backend/tests/build/CMakeFiles /home/dev-projects/game-backend-cpp/backend/tests/build/backend_path/shared/utils//CMakeFiles/progress.marks
+	cd /home/dev-projects/game-backend-cpp/backend/tests/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 backend_path/shared/utils/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dev-projects/game-backend-cpp/backend/tests/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/game-backend-cpp/backend/tests/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 backend_path/shared/utils/clean
+	cd /home/dev-projects/game-backend-cpp/backend/tests/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 backend_path/shared/utils/clean
 .PHONY : clean
 
 # The main clean target
@@ -162,17 +162,17 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/game-backend-cpp/backend/tests/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 backend_path/shared/utils/preinstall
+	cd /home/dev-projects/game-backend-cpp/backend/tests/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 backend_path/shared/utils/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/game-backend-cpp/backend/tests/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 backend_path/shared/utils/preinstall
+	cd /home/dev-projects/game-backend-cpp/backend/tests/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 backend_path/shared/utils/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/game-backend-cpp/backend/tests/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/dev-projects/game-backend-cpp/backend/tests/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Help Target
@@ -198,6 +198,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/game-backend-cpp/backend/tests/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/dev-projects/game-backend-cpp/backend/tests/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

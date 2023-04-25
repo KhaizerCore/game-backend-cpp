@@ -4,21 +4,21 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/game-backend-cpp/backend/tests/chess-test.cpp" "/home/game-backend-cpp/backend/tests/build/CMakeFiles/chess-test.dir/chess-test.cpp.o"
+  "/home/dev-projects/game-backend-cpp/backend/tests/chess-test.cpp" "/home/dev-projects/game-backend-cpp/backend/tests/build/CMakeFiles/chess-test.dir/chess-test.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/game-backend-cpp/backend/libraries/chess/./include"
-  "/home/game-backend-cpp/backend/libraries/base/./include"
-  "/home/game-backend-cpp/backend/shared/utils/uuid_v4"
+  "/home/dev-projects/game-backend-cpp/backend/libraries/chess/include"
+  "/home/dev-projects/game-backend-cpp/backend/libraries/base/./include"
+  "/home/dev-projects/game-backend-cpp/backend/shared/utils/uuid_v4"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/game-backend-cpp/backend/tests/build/backend_path/libraries/chess/CMakeFiles/chess.dir/DependInfo.cmake"
-  "/home/game-backend-cpp/backend/tests/build/backend_path/libraries/base/CMakeFiles/base.dir/DependInfo.cmake"
+  "/home/dev-projects/game-backend-cpp/backend/tests/build/backend_path/libraries/chess/CMakeFiles/chess.dir/DependInfo.cmake"
+  "/home/dev-projects/game-backend-cpp/backend/tests/build/backend_path/libraries/base/CMakeFiles/base.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

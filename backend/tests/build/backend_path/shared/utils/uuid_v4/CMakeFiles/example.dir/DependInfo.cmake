@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/game-backend-cpp/backend/shared/utils/uuid_v4/example.cpp" "/home/game-backend-cpp/backend/tests/build/backend_path/shared/utils/uuid_v4/CMakeFiles/example.dir/example.cpp.o"
+  "/home/dev-projects/game-backend-cpp/backend/shared/utils/uuid_v4/example.cpp" "/home/dev-projects/game-backend-cpp/backend/tests/build/backend_path/shared/utils/uuid_v4/CMakeFiles/example.dir/example.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

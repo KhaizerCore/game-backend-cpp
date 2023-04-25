@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/game-backend-cpp/backend/libraries/chess/./include -I/home/game-backend-cpp/backend/libraries/base/./include -I/home/game-backend-cpp/backend/shared/utils/uuid_v4
+CXX_INCLUDES = -I/home/dev-projects/game-backend-cpp/backend/libraries/chess/include -I/home/dev-projects/game-backend-cpp/backend/libraries/base/./include -I/home/dev-projects/game-backend-cpp/backend/shared/utils/uuid_v4
 
 CXX_FLAGS = -std=gnu++17
 

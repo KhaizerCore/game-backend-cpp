@@ -15,6 +15,8 @@ vector
 -
 utility
 -
+types.h
+-
 piece.h
 -
 
@@ -25,20 +27,36 @@ board.h
 -
 
 ../../libraries/chess/include/piece.h
+string
+-
+cstring
+-
+iostream
+-
+utility
+-
+vector
+-
+types.h
+-
+board.h
+-
 
-/home/game-backend-cpp/backend/libraries/chess/src/board.cpp
+../../libraries/chess/include/types.h
+
+/home/dev-projects/game-backend-cpp/backend/libraries/chess/src/board.cpp
 board.h
 -
 iostream
 -
 
-/home/game-backend-cpp/backend/libraries/chess/src/match.cpp
+/home/dev-projects/game-backend-cpp/backend/libraries/chess/src/match.cpp
 match.h
 -
 iostream
 -
 
-/home/game-backend-cpp/backend/libraries/chess/src/piece.cpp
+/home/dev-projects/game-backend-cpp/backend/libraries/chess/src/piece.cpp
 piece.h
 -
 

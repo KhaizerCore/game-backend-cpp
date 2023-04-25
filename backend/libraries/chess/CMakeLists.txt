@@ -11,7 +11,7 @@ target_link_libraries(chess
 
 target_include_directories(chess
     PUBLIC
-        ./include
+        ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
 
 

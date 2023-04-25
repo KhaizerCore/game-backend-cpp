@@ -1,4 +1,4 @@
-# Install script for directory: /home/game-backend-cpp/backend/shared/utils/uuid_v4
+# Install script for directory: /home/dev-projects/game-backend-cpp/backend/shared/utils/uuid_v4
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -43,17 +43,17 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/uuid_v4" TYPE FILE FILES "/home/game-backend-cpp/backend/shared/utils/uuid_v4/uuid_v4.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/uuid_v4" TYPE FILE FILES "/home/dev-projects/game-backend-cpp/backend/shared/utils/uuid_v4/uuid_v4.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/uuid_v4" TYPE FILE FILES "/home/game-backend-cpp/backend/shared/utils/uuid_v4/endianness.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/uuid_v4" TYPE FILE FILES "/home/dev-projects/game-backend-cpp/backend/shared/utils/uuid_v4/endianness.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/uuid_v4" TYPE FILE FILES
-    "/home/game-backend-cpp/backend/tests/build/backend_path/shared/utils/uuid_v4/generated/uuid_v4Config.cmake"
-    "/home/game-backend-cpp/backend/tests/build/backend_path/shared/utils/uuid_v4/generated/uuid_v4ConfigVersion.cmake"
+    "/home/dev-projects/game-backend-cpp/backend/tests/build/backend_path/shared/utils/uuid_v4/generated/uuid_v4Config.cmake"
+    "/home/dev-projects/game-backend-cpp/backend/tests/build/backend_path/shared/utils/uuid_v4/generated/uuid_v4ConfigVersion.cmake"
     )
 endif()
 
@@ -61,7 +61,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/uuid_v4/uuid_v4Targets.cmake")
     file(DIFFERENT EXPORT_FILE_CHANGED FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/uuid_v4/uuid_v4Targets.cmake"
-         "/home/game-backend-cpp/backend/tests/build/backend_path/shared/utils/uuid_v4/CMakeFiles/Export/lib/cmake/uuid_v4/uuid_v4Targets.cmake")
+         "/home/dev-projects/game-backend-cpp/backend/tests/build/backend_path/shared/utils/uuid_v4/CMakeFiles/Export/lib/cmake/uuid_v4/uuid_v4Targets.cmake")
     if(EXPORT_FILE_CHANGED)
       file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/uuid_v4/uuid_v4Targets-*.cmake")
       if(OLD_CONFIG_FILES)
@@ -70,6 +70,6 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
       endif()
     endif()
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/uuid_v4" TYPE FILE FILES "/home/game-backend-cpp/backend/tests/build/backend_path/shared/utils/uuid_v4/CMakeFiles/Export/lib/cmake/uuid_v4/uuid_v4Targets.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/uuid_v4" TYPE FILE FILES "/home/dev-projects/game-backend-cpp/backend/tests/build/backend_path/shared/utils/uuid_v4/CMakeFiles/Export/lib/cmake/uuid_v4/uuid_v4Targets.cmake")
 endif()
 

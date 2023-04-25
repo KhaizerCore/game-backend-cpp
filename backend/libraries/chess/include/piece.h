@@ -1,61 +1,97 @@
-#pragma once
+#ifndef piece_h
+#define piece_h
 
-#define EMPTY -1
+#include <string>
+#include <cstring>
+#include <iostream>
+#include <utility>
+#include <vector>
 
 
-typedef enum{
-    KING,
-    QUEEN,
-    ROOK,
-    KNIGHT,
-    BISHOP,
-    PAWN
-}piece_type;
+#include <types.h>
+#include <board.h>
+class Board; // Forward declaration
+// typedef struct position_t position;
 
-static const char * const white_piece_symbols[] = {
-    [KING] = "♚",
-    [QUEEN] = "♛",
-    [ROOK] = "♜",
-    [KNIGHT] = "♞",
-    [BISHOP] = "♝",
-    [PAWN] = "♟︎"
-};
-
-static const char * const black_piece_symbols[] = {
-    [KING] = "♔",
-    [QUEEN] = "♕",
-    [ROOK] = "♖",
-    [KNIGHT] = "♘",
-    [BISHOP] = "♗",
-    [PAWN] = "♙"
-};
-
-static const char * empty_symbol = "🨢";
-
-typedef enum{
-    BLACK,
-    WHITE
-}piece_color;
 
 class Piece{
     public:
-        static Piece* newKing(int pos_x, int pos_y);
-        static Piece* newQueen(int pos_x, int pos_y);
-        static Piece* newRook(int pos_x, int pos_y);
-        static Piece* newKnight(int pos_x, int pos_y);
-        static Piece* newBishop(int pos_x, int pos_y);
-        static Piece* newPawn(int pos_x, int pos_y);
+        static Piece* newKing();
+        static Piece* newQueen();
+        static Piece* newRook();
+        static Piece* newKnight();
+        static Piece* newBishop();
+        static Piece* newPawn();
 
         Piece* black();
         Piece* white();
 
+        bool isBlack();
+        bool isWhite();
+
+        piece_color getColor();
+
+        char * getSymbol();
+
+        static const char * empty_symbol;
+        static const char * const black_piece_symbols[];
+        static const char * const white_piece_symbols[];
+
+        bool hasEverMoved();
+
+        virtual bool validateMovement(Board * board, position initial_position,  position final_position);
+
+        Piece(piece_type type);
+
     private:
-        Piece(piece_type type, int pos_x, int pos_y);
+
+        bool everMoved;       
         
         piece_type type;
         piece_color color;
 
-        int pos_x;
-        int pos_y;
+};
+
+class King : public Piece{
+    public:
+        King();
+        bool validateMovement(Board * board, position initial_position,  position final_position) override;
 
 };
+
+class Queen : public Piece{
+    public:
+        Queen();
+        bool validateMovement(Board * board, position initial_position,  position final_position) override;
+
+};
+
+class Rook : public Piece{
+    public:
+        Rook();
+        bool validateMovement(Board * board, position initial_position,  position final_position) override;
+
+};
+
+class Knight : public Piece{
+    public:
+        Knight();
+        bool validateMovement(Board * board, position initial_position,  position final_position) override;
+
+};
+
+class Bishop : public Piece{
+    public:
+        Bishop();
+        bool validateMovement(Board * board, position initial_position,  position final_position) override;
+
+};
+
+class Pawn : public Piece{
+    public:
+        Pawn();
+        bool validateMovement(Board * board, position initial_position,  position final_position) override;
+
+};
+
+#endif
