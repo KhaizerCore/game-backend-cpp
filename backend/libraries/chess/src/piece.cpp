@@ -112,24 +112,44 @@ bool Piece::validateMovement(Board * board, position initial_position,  position
 
 King::King():Piece(KING){};
 bool King::validateMovement(Board * board, position initial_position,  position final_position){
+    int dx = final_position.x - initial_position.x;
+    int dy = final_position.y - initial_position.y;
 
+    if (abs(dx) > 1 || abs(dy) > 1 || dx == 0 && dy == 0) { return false; }
+
+    if (board->friendlyInPosition(this->getColor(), final_position)) { return false; }
+
+    return true;
 }
 
 
 Queen::Queen():Piece(QUEEN){};
 bool Queen::validateMovement(Board * board, position initial_position,  position final_position){
+    int dx = final_position.x - initial_position.x;
+    int dy = final_position.y - initial_position.y;
 
+    if (board->friendlyInPosition(this->getColor(), final_position)) { return false; }
+
+    Piece *auxRook = (this->isWhite()) ? (new Piece(ROOK))->white() : (new Piece(ROOK))->black(); 
+    Piece *auxBishop = (this->isWhite()) ? (new Piece(BISHOP))->white() : (new Piece(BISHOP))->black(); 
+    
+    if (
+        auxRook->validateMovement(board, initial_position, final_position) || 
+        auxBishop->validateMovement(board, initial_position, final_position)
+    ){
+        delete auxBishop;
+        delete auxRook;
+        return true;
+    }
+
+    delete auxBishop;
+    delete auxRook;
+    return false;
 }
 
 
 Rook::Rook():Piece(ROOK){};
 bool Rook::validateMovement(Board * board, position initial_position,  position final_position){
-
-}
-
-
-Knight::Knight():Piece(KNIGHT){};
-bool Knight::validateMovement(Board * board, position initial_position,  position final_position){
     int dx = final_position.x - initial_position.x;
     int dy = final_position.y - initial_position.y;
 
@@ -156,32 +176,64 @@ bool Knight::validateMovement(Board * board, position initial_position,  positio
         }
         return true;
     }
+    
+    return false;
+}
+
+
+Knight::Knight():Piece(KNIGHT){};
+bool Knight::validateMovement(Board * board, position initial_position,  position final_position){
+    int dx = final_position.x - initial_position.x;
+    int dy = final_position.y - initial_position.y;
+
+    if (dx == 0 || dy == 0) { return false; }
+
+    if (abs(dx) + abs(dy) == 3) { return true; }
+
     return false;
 }
 
 
 Bishop::Bishop():Piece(BISHOP){};
 bool Bishop::validateMovement(Board * board, position initial_position,  position final_position){
+    int dx = final_position.x - initial_position.x;
+    int dy = final_position.y - initial_position.y;
+    
+    // se modulo de dx e dy sao iguais (diagonal), e a peça se moveu, prossegue
+    if (abs(dx) != abs(dy) || dx == 0 || dy == 0) { return false; }
+    
+    // verificar se na posição final existe peça amiga
+    if (board->friendlyInPosition(this->getColor(), final_position)) { return false; }
 
+    // checar se há peças até uma casa antes da posição final
+    for (int di = 1; di < abs(dx); di++){
+        int i_pos_x = dx > 0 ? initial_position.x + di : initial_position.x - di;
+        int i_pos_y = dy > 0 ? initial_position.y + di : initial_position.y - di;
+        if (board->pieceInPositionExists(position{.x = i_pos_x, .y = i_pos_y})) { return false; }
+    }    
+
+    return true;
 }
 
 
 Pawn::Pawn():Piece(PAWN){};
 bool Pawn::validateMovement(Board * board, position initial_position,  position final_position){
-
     int dx = final_position.x - initial_position.x;
     int dy = final_position.y - initial_position.y;
 
     // se movimentar 1 casa para frente, nao pode ter peça
     if (dy == (this->isWhite() ? 1 : -1) && dx == 0 && !board->pieceInPositionExists(final_position)) { return true; }
+
     // se movimentar 2 casas para frente, nao pode ter peça na primeira nem na segunda casa e tem que ser o primeiro lance do peao
     if (dy == (this->isWhite() ? 2 : -2) && dx == 0 && 
         !board->pieceInPositionExists(position{.x = final_position.x, .y = final_position.y + (this->isWhite() ? -1 : 1)}) &&
         !board->pieceInPositionExists(final_position) &&
         !this->hasEverMoved()
     ) { return true; }
+
     // se movimentar com dy == 1 e dx == +- 1 e na posição final existir um inimigo, então é valido (captura)
     if (dy == (this->isWhite() ? 1 : -1) && abs(dx) == 1 && board->opponentInPosition(this->getColor(), final_position)) { return true; }
+    
     // Neste caso, o movimento nao se encaixou em nenhum padrão válido.
     return false; 
 
