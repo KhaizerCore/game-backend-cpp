@@ -27,35 +27,35 @@ Piece::Piece(piece_type type){
     this->everMoved = false;
 }
 
-Piece* Piece::newKing(){
-    Piece * piece = new Piece(KING);
-    return piece;
-}
+// Piece* Piece::newKing(){
+//     Piece * piece = new Piece(KING);
+//     return piece;
+// }
 
-Piece* Piece::newQueen(){
-    Piece * piece = new Piece(QUEEN);
-    return piece;
-}
+// Piece* Piece::newQueen(){
+//     Piece * piece = new Piece(QUEEN);
+//     return piece;
+// }
 
-Piece* Piece::newRook(){
-    Piece * piece = new Piece(ROOK);    
-    return piece;
-}
+// Piece* Piece::newRook(){
+//     Piece * piece = new Piece(ROOK);    
+//     return piece;
+// }
 
-Piece* Piece::newKnight(){
-    Piece * piece = new Piece(KNIGHT);
-    return piece;
-}
+// Piece* Piece::newKnight(){
+//     Piece * piece = new Piece(KNIGHT);
+//     return piece;
+// }
 
-Piece* Piece::newBishop(){
-    Piece * piece = new Piece(BISHOP);
-    return piece;
-}
+// Piece* Piece::newBishop(){
+//     Piece * piece = new Piece(BISHOP);
+//     return piece;
+// }
 
-Piece* Piece::newPawn(){
-    Piece * piece = new Piece(PAWN);
-    return piece;
-}
+// Piece* Piece::newPawn(){
+//     Piece * piece = new Piece(PAWN);
+//     return piece;
+// }
 
 
 Piece* Piece::black(){
@@ -101,6 +101,10 @@ char * Piece::getSymbol(){
 
 bool Piece::hasEverMoved(){
     return this->everMoved;
+}
+
+void Piece::setEverMovedTrue(){
+    this->everMoved = true;
 }
 
 /**

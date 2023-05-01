@@ -1,20 +1,13 @@
 #pragma once
 
+#include <types.h>
 class ChessPlayer
 {
     private:
-        /* data */
+        
     public:
-        ChessPlayer(/* args */);
+        ChessPlayer();
         ~ChessPlayer();
+
+        piece_color pieces_color;
 };
-
-ChessPlayer::ChessPlayer(/* args */)
-{
-
-}
-
-ChessPlayer::~ChessPlayer()
-{
-
-}

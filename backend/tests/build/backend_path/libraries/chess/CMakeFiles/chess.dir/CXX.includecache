@@ -17,13 +17,23 @@ utility
 -
 types.h
 -
+chess-player.h
+-
 piece.h
 -
 
+../../libraries/chess/include/chess-player.h
+types.h
+-
+
 ../../libraries/chess/include/match.h
+chess-player.h
+-
 person.h
 -
 board.h
+-
+types.h
 -
 
 ../../libraries/chess/include/piece.h
@@ -44,19 +54,9 @@ board.h
 
 ../../libraries/chess/include/types.h
 
-/home/dev-projects/game-backend-cpp/backend/libraries/chess/src/board.cpp
-board.h
--
-iostream
--
-
 /home/dev-projects/game-backend-cpp/backend/libraries/chess/src/match.cpp
 match.h
 -
 iostream
--
-
-/home/dev-projects/game-backend-cpp/backend/libraries/chess/src/piece.cpp
-piece.h
 -
 

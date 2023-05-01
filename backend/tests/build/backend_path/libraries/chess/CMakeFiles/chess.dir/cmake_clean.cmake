@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/chess.dir/src/board.cpp.o"
+  "CMakeFiles/chess.dir/src/chess-player.cpp.o"
   "CMakeFiles/chess.dir/src/match.cpp.o"
   "CMakeFiles/chess.dir/src/piece.cpp.o"
   "libchess.a"

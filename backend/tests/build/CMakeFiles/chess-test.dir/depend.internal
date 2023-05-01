@@ -4,6 +4,7 @@
 CMakeFiles/chess-test.dir/chess-test.cpp.o
  /home/dev-projects/game-backend-cpp/backend/libraries/base/include/person.h
  /home/dev-projects/game-backend-cpp/backend/libraries/chess/include/board.h
+ /home/dev-projects/game-backend-cpp/backend/libraries/chess/include/chess-player.h
  /home/dev-projects/game-backend-cpp/backend/libraries/chess/include/match.h
  /home/dev-projects/game-backend-cpp/backend/libraries/chess/include/piece.h
  /home/dev-projects/game-backend-cpp/backend/libraries/chess/include/types.h

@@ -1,0 +1,47 @@
+[
+{
+  "directory": "/home/dev-projects/game-backend-cpp/backend/tests/build",
+  "command": "/usr/bin/g++  -I/home/dev-projects/game-backend-cpp/backend/libraries/chess/include -I/home/dev-projects/game-backend-cpp/backend/libraries/base/./include -I/home/dev-projects/game-backend-cpp/backend/shared/utils/uuid_v4 -g -std=gnu++17 -o CMakeFiles/chess-test.dir/chess-test.cpp.o -c /home/dev-projects/game-backend-cpp/backend/tests/chess-test.cpp",
+  "file": "/home/dev-projects/game-backend-cpp/backend/tests/chess-test.cpp"
+},
+{
+  "directory": "/home/dev-projects/game-backend-cpp/backend/tests/build/backend_path/libraries/base",
+  "command": "/usr/bin/g++  -I/home/dev-projects/game-backend-cpp/backend/libraries/base/../../shared/utils/uuid_v4 -I/home/dev-projects/game-backend-cpp/backend/libraries/base/./include -I/home/dev-projects/game-backend-cpp/backend/shared/utils/uuid_v4 -g -std=gnu++17 -o CMakeFiles/base.dir/src/main.cpp.o -c /home/dev-projects/game-backend-cpp/backend/libraries/base/src/main.cpp",
+  "file": "/home/dev-projects/game-backend-cpp/backend/libraries/base/src/main.cpp"
+},
+{
+  "directory": "/home/dev-projects/game-backend-cpp/backend/tests/build/backend_path/libraries/base",
+  "command": "/usr/bin/g++  -I/home/dev-projects/game-backend-cpp/backend/libraries/base/../../shared/utils/uuid_v4 -I/home/dev-projects/game-backend-cpp/backend/libraries/base/./include -I/home/dev-projects/game-backend-cpp/backend/shared/utils/uuid_v4 -g -std=gnu++17 -o CMakeFiles/base.dir/src/main-lobby.cpp.o -c /home/dev-projects/game-backend-cpp/backend/libraries/base/src/main-lobby.cpp",
+  "file": "/home/dev-projects/game-backend-cpp/backend/libraries/base/src/main-lobby.cpp"
+},
+{
+  "directory": "/home/dev-projects/game-backend-cpp/backend/tests/build/backend_path/libraries/base",
+  "command": "/usr/bin/g++  -I/home/dev-projects/game-backend-cpp/backend/libraries/base/../../shared/utils/uuid_v4 -I/home/dev-projects/game-backend-cpp/backend/libraries/base/./include -I/home/dev-projects/game-backend-cpp/backend/shared/utils/uuid_v4 -g -std=gnu++17 -o CMakeFiles/base.dir/src/person.cpp.o -c /home/dev-projects/game-backend-cpp/backend/libraries/base/src/person.cpp",
+  "file": "/home/dev-projects/game-backend-cpp/backend/libraries/base/src/person.cpp"
+},
+{
+  "directory": "/home/dev-projects/game-backend-cpp/backend/tests/build/backend_path/libraries/chess",
+  "command": "/usr/bin/g++  -I/home/dev-projects/game-backend-cpp/backend/libraries/chess/include -I/home/dev-projects/game-backend-cpp/backend/libraries/base/./include -I/home/dev-projects/game-backend-cpp/backend/shared/utils/uuid_v4 -g -std=gnu++17 -o CMakeFiles/chess.dir/src/board.cpp.o -c /home/dev-projects/game-backend-cpp/backend/libraries/chess/src/board.cpp",
+  "file": "/home/dev-projects/game-backend-cpp/backend/libraries/chess/src/board.cpp"
+},
+{
+  "directory": "/home/dev-projects/game-backend-cpp/backend/tests/build/backend_path/libraries/chess",
+  "command": "/usr/bin/g++  -I/home/dev-projects/game-backend-cpp/backend/libraries/chess/include -I/home/dev-projects/game-backend-cpp/backend/libraries/base/./include -I/home/dev-projects/game-backend-cpp/backend/shared/utils/uuid_v4 -g -std=gnu++17 -o CMakeFiles/chess.dir/src/piece.cpp.o -c /home/dev-projects/game-backend-cpp/backend/libraries/chess/src/piece.cpp",
+  "file": "/home/dev-projects/game-backend-cpp/backend/libraries/chess/src/piece.cpp"
+},
+{
+  "directory": "/home/dev-projects/game-backend-cpp/backend/tests/build/backend_path/libraries/chess",
+  "command": "/usr/bin/g++  -I/home/dev-projects/game-backend-cpp/backend/libraries/chess/include -I/home/dev-projects/game-backend-cpp/backend/libraries/base/./include -I/home/dev-projects/game-backend-cpp/backend/shared/utils/uuid_v4 -g -std=gnu++17 -o CMakeFiles/chess.dir/src/match.cpp.o -c /home/dev-projects/game-backend-cpp/backend/libraries/chess/src/match.cpp",
+  "file": "/home/dev-projects/game-backend-cpp/backend/libraries/chess/src/match.cpp"
+},
+{
+  "directory": "/home/dev-projects/game-backend-cpp/backend/tests/build/backend_path/libraries/chess",
+  "command": "/usr/bin/g++  -I/home/dev-projects/game-backend-cpp/backend/libraries/chess/include -I/home/dev-projects/game-backend-cpp/backend/libraries/base/./include -I/home/dev-projects/game-backend-cpp/backend/shared/utils/uuid_v4 -g -std=gnu++17 -o CMakeFiles/chess.dir/src/chess-player.cpp.o -c /home/dev-projects/game-backend-cpp/backend/libraries/chess/src/chess-player.cpp",
+  "file": "/home/dev-projects/game-backend-cpp/backend/libraries/chess/src/chess-player.cpp"
+},
+{
+  "directory": "/home/dev-projects/game-backend-cpp/backend/tests/build/backend_path/shared/utils/uuid_v4",
+  "command": "/usr/bin/g++    -march=native -g -std=c++17 -o CMakeFiles/example.dir/example.cpp.o -c /home/dev-projects/game-backend-cpp/backend/shared/utils/uuid_v4/example.cpp",
+  "file": "/home/dev-projects/game-backend-cpp/backend/shared/utils/uuid_v4/example.cpp"
+}
+]

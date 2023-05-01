@@ -8,6 +8,7 @@
 using namespace std;
 
 #include <types.h>
+#include <chess-player.h>
 #include <piece.h>
 class Piece; // Forward declaration
 
@@ -23,11 +24,17 @@ class Board{
         bool pieceInPositionExists(position pos);
         bool opponentInPosition(piece_color mover_color, position pos);
         bool friendlyInPosition(piece_color mover_color, position pos);
+        int movePiece(ChessPlayer *player, position initial_position, position final_position);
 
     private:
         Board();
         static int id;
         vector<vector<Piece*>> board_matrix;
+        vector<Piece*> white_pieces_taken;
+        vector<Piece*> black_pieces_taken;
+
+        Piece * getPieceInPosition(position p);
+
 };
 
 #endif

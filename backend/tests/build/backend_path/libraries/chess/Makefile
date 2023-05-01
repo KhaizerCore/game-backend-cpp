@@ -217,6 +217,33 @@ src/board.cpp.s:
 	cd /home/dev-projects/game-backend-cpp/backend/tests/build && $(MAKE) $(MAKESILENT) -f backend_path/libraries/chess/CMakeFiles/chess.dir/build.make backend_path/libraries/chess/CMakeFiles/chess.dir/src/board.cpp.s
 .PHONY : src/board.cpp.s
 
+src/chess-player.o: src/chess-player.cpp.o
+
+.PHONY : src/chess-player.o
+
+# target to build an object file
+src/chess-player.cpp.o:
+	cd /home/dev-projects/game-backend-cpp/backend/tests/build && $(MAKE) $(MAKESILENT) -f backend_path/libraries/chess/CMakeFiles/chess.dir/build.make backend_path/libraries/chess/CMakeFiles/chess.dir/src/chess-player.cpp.o
+.PHONY : src/chess-player.cpp.o
+
+src/chess-player.i: src/chess-player.cpp.i
+
+.PHONY : src/chess-player.i
+
+# target to preprocess a source file
+src/chess-player.cpp.i:
+	cd /home/dev-projects/game-backend-cpp/backend/tests/build && $(MAKE) $(MAKESILENT) -f backend_path/libraries/chess/CMakeFiles/chess.dir/build.make backend_path/libraries/chess/CMakeFiles/chess.dir/src/chess-player.cpp.i
+.PHONY : src/chess-player.cpp.i
+
+src/chess-player.s: src/chess-player.cpp.s
+
+.PHONY : src/chess-player.s
+
+# target to generate assembly for a file
+src/chess-player.cpp.s:
+	cd /home/dev-projects/game-backend-cpp/backend/tests/build && $(MAKE) $(MAKESILENT) -f backend_path/libraries/chess/CMakeFiles/chess.dir/build.make backend_path/libraries/chess/CMakeFiles/chess.dir/src/chess-player.cpp.s
+.PHONY : src/chess-player.cpp.s
+
 src/match.o: src/match.cpp.o
 
 .PHONY : src/match.o
@@ -287,6 +314,9 @@ help:
 	@echo "... src/board.o"
 	@echo "... src/board.i"
 	@echo "... src/board.s"
+	@echo "... src/chess-player.o"
+	@echo "... src/chess-player.i"
+	@echo "... src/chess-player.s"
 	@echo "... src/match.o"
 	@echo "... src/match.i"
 	@echo "... src/match.s"

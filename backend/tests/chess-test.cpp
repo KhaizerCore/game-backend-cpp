@@ -1,3 +1,4 @@
+#include <chess-player.h>
 #include <match.h>
 
 #include <iostream>
@@ -5,11 +6,16 @@ using namespace std;
 
 int main(){
 
-    Match match;
+    ChessPlayer *playerWhites = new ChessPlayer();
+    ChessPlayer *playerBlacks = new ChessPlayer();
 
-    cout << endl;
+    Match match(playerWhites, playerBlacks);
 
-    match.board->printBoard();
+    match.begin();
 
-    cout << endl << "test done!" << endl;
+    // cout << endl;
+
+    // match.board->printBoard();
+
+    // cout << endl << "test done!" << endl;
 }

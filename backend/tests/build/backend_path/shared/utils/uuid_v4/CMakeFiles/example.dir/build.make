@@ -79,15 +79,15 @@ include backend_path/shared/utils/uuid_v4/CMakeFiles/example.dir/flags.make
 backend_path/shared/utils/uuid_v4/CMakeFiles/example.dir/example.cpp.o: backend_path/shared/utils/uuid_v4/CMakeFiles/example.dir/flags.make
 backend_path/shared/utils/uuid_v4/CMakeFiles/example.dir/example.cpp.o: ../../shared/utils/uuid_v4/example.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dev-projects/game-backend-cpp/backend/tests/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object backend_path/shared/utils/uuid_v4/CMakeFiles/example.dir/example.cpp.o"
-	cd /home/dev-projects/game-backend-cpp/backend/tests/build/backend_path/shared/utils/uuid_v4 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/example.dir/example.cpp.o -c /home/dev-projects/game-backend-cpp/backend/shared/utils/uuid_v4/example.cpp
+	cd /home/dev-projects/game-backend-cpp/backend/tests/build/backend_path/shared/utils/uuid_v4 && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/example.dir/example.cpp.o -c /home/dev-projects/game-backend-cpp/backend/shared/utils/uuid_v4/example.cpp
 
 backend_path/shared/utils/uuid_v4/CMakeFiles/example.dir/example.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/example.dir/example.cpp.i"
-	cd /home/dev-projects/game-backend-cpp/backend/tests/build/backend_path/shared/utils/uuid_v4 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dev-projects/game-backend-cpp/backend/shared/utils/uuid_v4/example.cpp > CMakeFiles/example.dir/example.cpp.i
+	cd /home/dev-projects/game-backend-cpp/backend/tests/build/backend_path/shared/utils/uuid_v4 && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dev-projects/game-backend-cpp/backend/shared/utils/uuid_v4/example.cpp > CMakeFiles/example.dir/example.cpp.i
 
 backend_path/shared/utils/uuid_v4/CMakeFiles/example.dir/example.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/example.dir/example.cpp.s"
-	cd /home/dev-projects/game-backend-cpp/backend/tests/build/backend_path/shared/utils/uuid_v4 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dev-projects/game-backend-cpp/backend/shared/utils/uuid_v4/example.cpp -o CMakeFiles/example.dir/example.cpp.s
+	cd /home/dev-projects/game-backend-cpp/backend/tests/build/backend_path/shared/utils/uuid_v4 && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dev-projects/game-backend-cpp/backend/shared/utils/uuid_v4/example.cpp -o CMakeFiles/example.dir/example.cpp.s
 
 # Object files for target example
 example_OBJECTS = \

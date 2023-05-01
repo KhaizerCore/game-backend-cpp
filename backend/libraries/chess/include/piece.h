@@ -16,12 +16,12 @@ class Board; // Forward declaration
 
 class Piece{
     public:
-        static Piece* newKing();
-        static Piece* newQueen();
-        static Piece* newRook();
-        static Piece* newKnight();
-        static Piece* newBishop();
-        static Piece* newPawn();
+        // static Piece* newKing();
+        // static Piece* newQueen();
+        // static Piece* newRook();
+        // static Piece* newKnight();
+        // static Piece* newBishop();
+        // static Piece* newPawn();
 
         Piece* black();
         Piece* white();
@@ -38,6 +38,7 @@ class Piece{
         static const char * const white_piece_symbols[];
 
         bool hasEverMoved();
+        void setEverMovedTrue();
 
         virtual bool validateMovement(Board * board, position initial_position,  position final_position);
 

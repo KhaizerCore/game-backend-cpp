@@ -1,0 +1,197 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "backend_path",
+					"childIndexes" : 
+					[
+						2,
+						5
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/dev-projects/game-backend-cpp/backend"
+				},
+				{
+					"build" : "backend_path/libraries",
+					"childIndexes" : 
+					[
+						3,
+						4
+					],
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "/home/dev-projects/game-backend-cpp/backend/libraries"
+				},
+				{
+					"build" : "backend_path/libraries/base",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "/home/dev-projects/game-backend-cpp/backend/libraries/base",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "backend_path/libraries/chess",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "/home/dev-projects/game-backend-cpp/backend/libraries/chess",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "backend_path/shared/utils",
+					"childIndexes" : 
+					[
+						6
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.18"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "/home/dev-projects/game-backend-cpp/backend/shared/utils"
+				},
+				{
+					"build" : "backend_path/shared/utils/uuid_v4",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"parentIndex" : 5,
+					"projectIndex" : 1,
+					"source" : "/home/dev-projects/game-backend-cpp/backend/shared/utils/uuid_v4",
+					"targetIndexes" : 
+					[
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					],
+					"name" : "chest-test",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						6
+					],
+					"name" : "uuid_v4",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 3,
+					"id" : "base::@2d8fc8830c53eb4d0f4b",
+					"jsonFile" : "target-base-Debug-82bbf577231b50c13b2a.json",
+					"name" : "base",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "chess::@9e295f27b125e8d443e8",
+					"jsonFile" : "target-chess-Debug-efdaec7bce3fda5675e7.json",
+					"name" : "chess",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "chess-test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-chess-test-Debug-b9fd124b0173351c7ba2.json",
+					"name" : "chess-test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 6,
+					"id" : "example::@706aa21f847150c5437f",
+					"jsonFile" : "target-example-Debug-b7d1adb82fed445c6138.json",
+					"name" : "example",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/dev-projects/game-backend-cpp/backend/tests/build",
+		"source" : "/home/dev-projects/game-backend-cpp/backend/tests"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 1
+	}
+}
