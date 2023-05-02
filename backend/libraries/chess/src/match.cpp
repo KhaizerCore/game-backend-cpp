@@ -38,7 +38,7 @@ int Match::begin(){
             cout << "De: x = "; cin >> wp0.x; cout << "   y = "; cin >> wp0.y; cout << endl;
             cout << "Para: x = "; cin >> wpf.x; cout << "     y = "; cin >> wpf.y; cout << endl;   
 
-            valid_white_move = this->board->movePiece(this->playerWhites, wp0, wpf);
+            valid_white_move = this->board->validateAndMovePiece(this->playerWhites, wp0, wpf);
 
             // printar board
             this->board->printBoard();
@@ -56,7 +56,7 @@ int Match::begin(){
             cout << "De: x = "; cin >> bp0.x; cout << ", y = "; cin >> bp0.y; cout << endl;
             cout << "Para: x = "; cin >> bpf.x; cout << ", y = "; cin >> bpf.y; cout << endl;
 
-            valid_black_move = this->board->movePiece(this->playerBlacks, bp0, bpf);
+            valid_black_move = this->board->validateAndMovePiece(this->playerBlacks, bp0, bpf);
 
             // printar board
             this->board->printBoard();

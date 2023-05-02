@@ -22,65 +22,56 @@ const char * const Piece::black_piece_symbols[] = {
 
 const char * Piece::empty_symbol = "🨢";
 
-Piece::Piece(piece_type type){
+Piece::Piece(piece_type type)
+{
     this->type = type;
     this->everMoved = false;
 }
 
-// Piece* Piece::newKing(){
-//     Piece * piece = new Piece(KING);
-//     return piece;
-// }
+Piece::Piece(Piece *toBeCopied)
+{
+    this->type = toBeCopied->type;
+    this->everMoved = toBeCopied->everMoved;
+    this->color = toBeCopied->color;
+}
 
-// Piece* Piece::newQueen(){
-//     Piece * piece = new Piece(QUEEN);
-//     return piece;
-// }
+/**
+ * Will get overriden
+*/
+Piece* Piece::clone()
+{
+    return NULL;
+}
 
-// Piece* Piece::newRook(){
-//     Piece * piece = new Piece(ROOK);    
-//     return piece;
-// }
-
-// Piece* Piece::newKnight(){
-//     Piece * piece = new Piece(KNIGHT);
-//     return piece;
-// }
-
-// Piece* Piece::newBishop(){
-//     Piece * piece = new Piece(BISHOP);
-//     return piece;
-// }
-
-// Piece* Piece::newPawn(){
-//     Piece * piece = new Piece(PAWN);
-//     return piece;
-// }
-
-
-Piece* Piece::black(){
+Piece* Piece::black()
+{
     this->color = BLACK;
     return this;
 }
 
-Piece* Piece::white(){
+Piece* Piece::white()
+{
     this->color = WHITE;
     return this;
 }
 
-bool Piece::isBlack(){
+bool Piece::isBlack()
+{
     return this->color == BLACK;
 }
 
-bool Piece::isWhite(){
+bool Piece::isWhite()
+{
     return this->color == WHITE;
 }
 
-piece_color Piece::getColor(){
+piece_color Piece::getColor()
+{
     return this->color;
 }
 
-char * Piece::getSymbol(){
+char * Piece::getSymbol()
+{
     char * symbol;
 
     if (this->isWhite()){
@@ -114,6 +105,11 @@ bool Piece::validateMovement(Board * board, position initial_position,  position
     return false;
 }
 
+bool Piece::isKing(){
+    return this->type == KING;
+}
+
+
 King::King():Piece(KING){};
 bool King::validateMovement(Board * board, position initial_position,  position final_position){
     int dx = final_position.x - initial_position.x;
@@ -124,6 +120,12 @@ bool King::validateMovement(Board * board, position initial_position,  position 
     if (board->friendlyInPosition(this->getColor(), final_position)) { return false; }
 
     return true;
+}
+Piece* King::clone()
+{
+    Piece *piece = this->isWhite() ? (new King())->white() : (new King())->black();
+    if (this->hasEverMoved()) 
+        piece->setEverMovedTrue();
 }
 
 
@@ -149,6 +151,12 @@ bool Queen::validateMovement(Board * board, position initial_position,  position
     delete auxBishop;
     delete auxRook;
     return false;
+}
+Piece* Queen::clone()
+{
+    Piece *piece = this->isWhite() ? (new Queen())->white() : (new Queen())->black();
+    if (this->hasEverMoved()) 
+        piece->setEverMovedTrue();
 }
 
 
@@ -183,6 +191,12 @@ bool Rook::validateMovement(Board * board, position initial_position,  position 
     
     return false;
 }
+Piece* Rook::clone()
+{
+    Piece *piece = this->isWhite() ? (new Rook())->white() : (new Rook())->black();
+    if (this->hasEverMoved()) 
+        piece->setEverMovedTrue();
+}
 
 
 Knight::Knight():Piece(KNIGHT){};
@@ -195,6 +209,12 @@ bool Knight::validateMovement(Board * board, position initial_position,  positio
     if (abs(dx) + abs(dy) == 3) { return true; }
 
     return false;
+}
+Piece* Knight::clone()
+{
+    Piece *piece = this->isWhite() ? (new Knight())->white() : (new Knight())->black();
+    if (this->hasEverMoved()) 
+        piece->setEverMovedTrue();
 }
 
 
@@ -217,6 +237,12 @@ bool Bishop::validateMovement(Board * board, position initial_position,  positio
     }    
 
     return true;
+}
+Piece* Bishop::clone()
+{
+    Piece *piece = this->isWhite() ? (new Bishop())->white() : (new Bishop())->black();
+    if (this->hasEverMoved()) 
+        piece->setEverMovedTrue();
 }
 
 
@@ -241,4 +267,10 @@ bool Pawn::validateMovement(Board * board, position initial_position,  position 
     // Neste caso, o movimento nao se encaixou em nenhum padrão válido.
     return false; 
 
+}
+Piece* Pawn::clone()
+{
+    Piece *piece = this->isWhite() ? (new Pawn())->white() : (new Pawn())->black();
+    if (this->hasEverMoved()) 
+        piece->setEverMovedTrue();
 }

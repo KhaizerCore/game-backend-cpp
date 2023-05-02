@@ -39,10 +39,14 @@ class Piece{
 
         bool hasEverMoved();
         void setEverMovedTrue();
+        bool isKing();
 
         virtual bool validateMovement(Board * board, position initial_position,  position final_position);
 
+        virtual Piece* clone();
+
         Piece(piece_type type);
+        Piece(Piece *toBeCopied);
 
     private:
 
@@ -57,42 +61,42 @@ class King : public Piece{
     public:
         King();
         bool validateMovement(Board * board, position initial_position,  position final_position) override;
-
+        Piece* clone() override;
 };
 
 class Queen : public Piece{
     public:
         Queen();
         bool validateMovement(Board * board, position initial_position,  position final_position) override;
-
+        Piece* clone() override;
 };
 
 class Rook : public Piece{
     public:
         Rook();
         bool validateMovement(Board * board, position initial_position,  position final_position) override;
-
+        Piece* clone() override;
 };
 
 class Knight : public Piece{
     public:
         Knight();
         bool validateMovement(Board * board, position initial_position,  position final_position) override;
-
+        Piece* clone() override;
 };
 
 class Bishop : public Piece{
     public:
         Bishop();
         bool validateMovement(Board * board, position initial_position,  position final_position) override;
-
+        Piece* clone() override;
 };
 
 class Pawn : public Piece{
     public:
         Pawn();
         bool validateMovement(Board * board, position initial_position,  position final_position) override;
-
+        Piece* clone() override;
 };
 
 #endif

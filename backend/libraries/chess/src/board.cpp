@@ -3,10 +3,21 @@
 #include <iostream>
 using namespace std;
 
-Board::Board()
+int Board::resetPiecesTaken()
 {
     this->black_pieces_taken = {};
     this->white_pieces_taken = {};
+}
+
+Board::Board()
+{
+    this->resetPiecesTaken();
+}
+
+Board::Board(vector<vector<Piece*>> board_matrix)
+{
+    this->resetPiecesTaken();
+    this->board_matrix = board_matrix;
 }
 
 Piece* Board::getPieceInPosition(position p)
@@ -14,7 +25,104 @@ Piece* Board::getPieceInPosition(position p)
     return this->board_matrix[p.y][p.x];
 }
 
-int Board::movePiece(ChessPlayer *player, position initial_position, position final_position)
+int Board::movePieceInBoard(Board * board, position initial_position, position final_position){
+    Piece * piece_to_be_moved = board->getPieceInPosition(initial_position);
+
+    if (NULL == piece_to_be_moved) { return -1; }
+
+    // se a casa destino estiver vazia    
+    if (board->getPieceInPosition(final_position) == NULL) {
+                
+        board->board_matrix[initial_position.y][initial_position.x] = NULL;
+
+        board->board_matrix[final_position.y][final_position.x] = piece_to_be_moved;
+
+        piece_to_be_moved->setEverMovedTrue();
+
+    }
+    else // se a casa destino contiver uma peça (será inimiga devido a validação), toma a posição e a peça que estava no local jogando no respectivo array de peças tomadas
+    {
+        Piece *piece_taken = board->getPieceInPosition(final_position);
+
+        if (piece_taken->isWhite())
+        {
+            board->white_pieces_taken.push_back(piece_taken);
+        }
+        else
+        {
+            board->black_pieces_taken.push_back(piece_taken);
+        }
+
+        board->board_matrix[initial_position.y][initial_position.x] = NULL;
+
+        board->board_matrix[final_position.y][final_position.x] = piece_to_be_moved;
+
+        piece_to_be_moved->setEverMovedTrue();
+    }
+
+    return 0;
+}
+
+/**
+ * Must be used after movement basic validation is successfull
+*/
+bool Board::CheckToItselfAfterMovement(ChessPlayer *player, position initial_position, position final_position){
+    vector<vector<Piece*>> board_matrix_sim;
+
+    // copy this->board values to board_matrix_sim that will be used to simulate movements
+    for(int y = 0; y < this->board_matrix.size(); y++){
+        board_matrix_sim.push_back(vector<Piece*>{});
+        for (int x = 0; x < this->board_matrix[y].size(); x++){
+            Piece * piece = this->board_matrix[y][x];
+            if (NULL == piece) {
+                board_matrix_sim[y].push_back(NULL);
+            }else{
+                board_matrix_sim[y].push_back(piece->clone());
+            }
+        }
+    }
+    
+    // copied board that will be used in simulation
+    Board *simulated_board = new Board(board_matrix_sim);
+
+    // make the planned movement
+    Board::movePieceInBoard(simulated_board, initial_position, final_position);
+
+    // find current player's King position
+    position current_player_kings_position;
+    for(int y = 0; y < simulated_board->board_matrix.size(); y++){
+        for (int x = 0; x < simulated_board->board_matrix[y].size(); x++){
+            Piece * piece = simulated_board->board_matrix[y][x];
+            if (NULL != piece){
+                // piece is an instance of King and piece's color is the same as player's 
+                if (piece->isKing() && (piece->getColor() == player->pieces_color)){
+                    current_player_kings_position.y = y;
+                    current_player_kings_position.x = x;
+                }
+            }
+        }
+    }
+
+    // verifies for each enemy piece, if they have a valid movement to current player's king
+    for(int y = 0; y < simulated_board->board_matrix.size(); y++){
+        for (int x = 0; x < simulated_board->board_matrix[y].size(); x++){
+            Piece * piece = simulated_board->board_matrix[y][x];
+            if (NULL != piece){
+                if (piece->getColor() != player->pieces_color){
+                    if (piece->validateMovement(simulated_board, position{.x = x, .y = y}, current_player_kings_position)){
+                        delete simulated_board;
+                        return true;
+                    }
+                }                
+            }
+        }
+    }
+
+    delete simulated_board;
+    return false;
+}
+
+int Board::validateAndMovePiece(ChessPlayer *player, position initial_position, position final_position)
 {
     Piece * piece_to_be_moved = this->getPieceInPosition(initial_position);
     
@@ -26,37 +134,10 @@ int Board::movePiece(ChessPlayer *player, position initial_position, position fi
     // valida o movimento baseado na regra de cada peça
     if (piece_to_be_moved->validateMovement(this, initial_position, final_position) == false) { return -1; }
 
-    // se a casa destino estiver vazia
-    if (this->getPieceInPosition(final_position) == NULL) {
-                
-        this->board_matrix[initial_position.y][initial_position.x] = NULL;
+    if (CheckToItselfAfterMovement(player, initial_position, final_position)){ return -1; }
 
-        this->board_matrix[final_position.y][final_position.x] = piece_to_be_moved;
-
-        piece_to_be_moved->setEverMovedTrue();
-
-    }
-    else // se a casa destino contiver uma peça (será inimiga devido a validação), toma a posição e a peça que estava no local jogando no respectivo array de peças tomadas
-    {
-        Piece *piece_taken = this->getPieceInPosition(final_position);
-
-        if (piece_taken->isWhite())
-        {
-            this->white_pieces_taken.push_back(piece_taken);
-        }
-        else
-        {
-            this->black_pieces_taken.push_back(piece_taken);
-        }
-
-        this->board_matrix[initial_position.y][initial_position.x] = NULL;
-
-        this->board_matrix[final_position.y][final_position.x] = piece_to_be_moved;
-
-        piece_to_be_moved->setEverMovedTrue();
-    }
-
-    return 0;
+    if(Board::movePieceInBoard(this, initial_position, final_position) == -1) { return -1; }
+    
 }
 
 Board* Board::newEmptyBoard()
