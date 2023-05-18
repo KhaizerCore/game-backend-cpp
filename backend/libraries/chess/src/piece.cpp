@@ -109,9 +109,18 @@ bool Piece::isKing(){
     return this->type == KING;
 }
 
+bool Piece::validBounds(position final_position)
+{
+    if (final_position.x < 0 || final_position.x >= CHESS_TABLE_DIMENSION_X) { return false ;}
+    if (final_position.y < 0 || final_position.y >= CHESS_TABLE_DIMENSION_Y) { return false ;}
+    return true;
+}
 
 King::King():Piece(KING){};
 bool King::validateMovement(Board * board, position initial_position,  position final_position){
+    
+    if (!Piece::validBounds(final_position)){ return false; }
+
     int dx = final_position.x - initial_position.x;
     int dy = final_position.y - initial_position.y;
 
@@ -131,6 +140,9 @@ Piece* King::clone()
 
 Queen::Queen():Piece(QUEEN){};
 bool Queen::validateMovement(Board * board, position initial_position,  position final_position){
+    
+    if (!Piece::validBounds(final_position)){ return false; }
+
     int dx = final_position.x - initial_position.x;
     int dy = final_position.y - initial_position.y;
 
@@ -162,6 +174,9 @@ Piece* Queen::clone()
 
 Rook::Rook():Piece(ROOK){};
 bool Rook::validateMovement(Board * board, position initial_position,  position final_position){
+    
+    if (!Piece::validBounds(final_position)){ return false; }
+
     int dx = final_position.x - initial_position.x;
     int dy = final_position.y - initial_position.y;
 
@@ -201,6 +216,9 @@ Piece* Rook::clone()
 
 Knight::Knight():Piece(KNIGHT){};
 bool Knight::validateMovement(Board * board, position initial_position,  position final_position){
+
+    if (!Piece::validBounds(final_position)){ return false; }
+
     int dx = final_position.x - initial_position.x;
     int dy = final_position.y - initial_position.y;
 
@@ -220,6 +238,9 @@ Piece* Knight::clone()
 
 Bishop::Bishop():Piece(BISHOP){};
 bool Bishop::validateMovement(Board * board, position initial_position,  position final_position){
+
+    if (!Piece::validBounds(final_position)){ return false; }
+
     int dx = final_position.x - initial_position.x;
     int dy = final_position.y - initial_position.y;
     
@@ -248,6 +269,9 @@ Piece* Bishop::clone()
 
 Pawn::Pawn():Piece(PAWN){};
 bool Pawn::validateMovement(Board * board, position initial_position,  position final_position){
+
+    if (!Piece::validBounds(final_position)){ return false; }
+
     int dx = final_position.x - initial_position.x;
     int dy = final_position.y - initial_position.y;
 

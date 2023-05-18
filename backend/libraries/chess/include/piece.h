@@ -37,6 +37,8 @@ class Piece{
         static const char * const black_piece_symbols[];
         static const char * const white_piece_symbols[];
 
+        static bool validBounds(position final_position);
+
         bool hasEverMoved();
         void setEverMovedTrue();
         bool isKing();
