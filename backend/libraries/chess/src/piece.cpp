@@ -148,8 +148,8 @@ bool Queen::validateMovement(Board * board, position initial_position,  position
 
     if (board->friendlyInPosition(this->getColor(), final_position)) { return false; }
 
-    Piece *auxRook = (this->isWhite()) ? (new Piece(ROOK))->white() : (new Piece(ROOK))->black(); 
-    Piece *auxBishop = (this->isWhite()) ? (new Piece(BISHOP))->white() : (new Piece(BISHOP))->black(); 
+    Rook *auxRook = (Rook *) (this->isWhite() ? (new Rook())->white() : (new Rook())->black()); 
+    Bishop *auxBishop = (Bishop *) (this->isWhite() ? (new Bishop())->white() : (new Bishop())->black()); 
     
     if (
         auxRook->validateMovement(board, initial_position, final_position) || 
