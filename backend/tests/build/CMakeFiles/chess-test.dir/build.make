@@ -79,15 +79,15 @@ include CMakeFiles/chess-test.dir/flags.make
 CMakeFiles/chess-test.dir/chess-test.cpp.o: CMakeFiles/chess-test.dir/flags.make
 CMakeFiles/chess-test.dir/chess-test.cpp.o: ../chess-test.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dev-projects/game-backend-cpp/backend/tests/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/chess-test.dir/chess-test.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/chess-test.dir/chess-test.cpp.o -c /home/dev-projects/game-backend-cpp/backend/tests/chess-test.cpp
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/chess-test.dir/chess-test.cpp.o -c /home/dev-projects/game-backend-cpp/backend/tests/chess-test.cpp
 
 CMakeFiles/chess-test.dir/chess-test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/chess-test.dir/chess-test.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dev-projects/game-backend-cpp/backend/tests/chess-test.cpp > CMakeFiles/chess-test.dir/chess-test.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dev-projects/game-backend-cpp/backend/tests/chess-test.cpp > CMakeFiles/chess-test.dir/chess-test.cpp.i
 
 CMakeFiles/chess-test.dir/chess-test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/chess-test.dir/chess-test.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dev-projects/game-backend-cpp/backend/tests/chess-test.cpp -o CMakeFiles/chess-test.dir/chess-test.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dev-projects/game-backend-cpp/backend/tests/chess-test.cpp -o CMakeFiles/chess-test.dir/chess-test.cpp.s
 
 # Object files for target chess-test
 chess__test_OBJECTS = \

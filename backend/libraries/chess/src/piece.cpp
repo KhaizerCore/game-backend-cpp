@@ -135,6 +135,7 @@ Piece* King::clone()
     Piece *piece = this->isWhite() ? (new King())->white() : (new King())->black();
     if (this->hasEverMoved()) 
         piece->setEverMovedTrue();
+    return piece;
 }
 
 
@@ -151,8 +152,7 @@ bool Queen::validateMovement(Board * board, position initial_position,  position
     Rook *auxRook = (Rook *) (this->isWhite() ? (new Rook())->white() : (new Rook())->black()); 
     Bishop *auxBishop = (Bishop *) (this->isWhite() ? (new Bishop())->white() : (new Bishop())->black()); 
     
-    if (
-        auxRook->validateMovement(board, initial_position, final_position) || 
+    if (auxRook->validateMovement(board, initial_position, final_position) || 
         auxBishop->validateMovement(board, initial_position, final_position)
     ){
         delete auxBishop;
@@ -169,6 +169,7 @@ Piece* Queen::clone()
     Piece *piece = this->isWhite() ? (new Queen())->white() : (new Queen())->black();
     if (this->hasEverMoved()) 
         piece->setEverMovedTrue();
+    return piece;
 }
 
 
@@ -211,6 +212,7 @@ Piece* Rook::clone()
     Piece *piece = this->isWhite() ? (new Rook())->white() : (new Rook())->black();
     if (this->hasEverMoved()) 
         piece->setEverMovedTrue();
+    return piece;
 }
 
 
@@ -233,6 +235,7 @@ Piece* Knight::clone()
     Piece *piece = this->isWhite() ? (new Knight())->white() : (new Knight())->black();
     if (this->hasEverMoved()) 
         piece->setEverMovedTrue();
+    return piece;
 }
 
 
@@ -264,6 +267,7 @@ Piece* Bishop::clone()
     Piece *piece = this->isWhite() ? (new Bishop())->white() : (new Bishop())->black();
     if (this->hasEverMoved()) 
         piece->setEverMovedTrue();
+    return piece;
 }
 
 
@@ -297,4 +301,5 @@ Piece* Pawn::clone()
     Piece *piece = this->isWhite() ? (new Pawn())->white() : (new Pawn())->black();
     if (this->hasEverMoved()) 
         piece->setEverMovedTrue();
+    return piece;
 }

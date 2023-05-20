@@ -1,1 +1,1 @@
-/usr/bin/c++  -march=native CMakeFiles/example.dir/example.cpp.o -o example 
+/usr/bin/g++  -march=native -g CMakeFiles/example.dir/example.cpp.o -o example 

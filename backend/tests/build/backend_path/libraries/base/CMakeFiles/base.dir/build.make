@@ -79,41 +79,41 @@ include backend_path/libraries/base/CMakeFiles/base.dir/flags.make
 backend_path/libraries/base/CMakeFiles/base.dir/src/main.cpp.o: backend_path/libraries/base/CMakeFiles/base.dir/flags.make
 backend_path/libraries/base/CMakeFiles/base.dir/src/main.cpp.o: ../../libraries/base/src/main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dev-projects/game-backend-cpp/backend/tests/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object backend_path/libraries/base/CMakeFiles/base.dir/src/main.cpp.o"
-	cd /home/dev-projects/game-backend-cpp/backend/tests/build/backend_path/libraries/base && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/base.dir/src/main.cpp.o -c /home/dev-projects/game-backend-cpp/backend/libraries/base/src/main.cpp
+	cd /home/dev-projects/game-backend-cpp/backend/tests/build/backend_path/libraries/base && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/base.dir/src/main.cpp.o -c /home/dev-projects/game-backend-cpp/backend/libraries/base/src/main.cpp
 
 backend_path/libraries/base/CMakeFiles/base.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/base.dir/src/main.cpp.i"
-	cd /home/dev-projects/game-backend-cpp/backend/tests/build/backend_path/libraries/base && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dev-projects/game-backend-cpp/backend/libraries/base/src/main.cpp > CMakeFiles/base.dir/src/main.cpp.i
+	cd /home/dev-projects/game-backend-cpp/backend/tests/build/backend_path/libraries/base && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dev-projects/game-backend-cpp/backend/libraries/base/src/main.cpp > CMakeFiles/base.dir/src/main.cpp.i
 
 backend_path/libraries/base/CMakeFiles/base.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/base.dir/src/main.cpp.s"
-	cd /home/dev-projects/game-backend-cpp/backend/tests/build/backend_path/libraries/base && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dev-projects/game-backend-cpp/backend/libraries/base/src/main.cpp -o CMakeFiles/base.dir/src/main.cpp.s
+	cd /home/dev-projects/game-backend-cpp/backend/tests/build/backend_path/libraries/base && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dev-projects/game-backend-cpp/backend/libraries/base/src/main.cpp -o CMakeFiles/base.dir/src/main.cpp.s
 
 backend_path/libraries/base/CMakeFiles/base.dir/src/main-lobby.cpp.o: backend_path/libraries/base/CMakeFiles/base.dir/flags.make
 backend_path/libraries/base/CMakeFiles/base.dir/src/main-lobby.cpp.o: ../../libraries/base/src/main-lobby.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dev-projects/game-backend-cpp/backend/tests/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object backend_path/libraries/base/CMakeFiles/base.dir/src/main-lobby.cpp.o"
-	cd /home/dev-projects/game-backend-cpp/backend/tests/build/backend_path/libraries/base && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/base.dir/src/main-lobby.cpp.o -c /home/dev-projects/game-backend-cpp/backend/libraries/base/src/main-lobby.cpp
+	cd /home/dev-projects/game-backend-cpp/backend/tests/build/backend_path/libraries/base && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/base.dir/src/main-lobby.cpp.o -c /home/dev-projects/game-backend-cpp/backend/libraries/base/src/main-lobby.cpp
 
 backend_path/libraries/base/CMakeFiles/base.dir/src/main-lobby.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/base.dir/src/main-lobby.cpp.i"
-	cd /home/dev-projects/game-backend-cpp/backend/tests/build/backend_path/libraries/base && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dev-projects/game-backend-cpp/backend/libraries/base/src/main-lobby.cpp > CMakeFiles/base.dir/src/main-lobby.cpp.i
+	cd /home/dev-projects/game-backend-cpp/backend/tests/build/backend_path/libraries/base && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dev-projects/game-backend-cpp/backend/libraries/base/src/main-lobby.cpp > CMakeFiles/base.dir/src/main-lobby.cpp.i
 
 backend_path/libraries/base/CMakeFiles/base.dir/src/main-lobby.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/base.dir/src/main-lobby.cpp.s"
-	cd /home/dev-projects/game-backend-cpp/backend/tests/build/backend_path/libraries/base && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dev-projects/game-backend-cpp/backend/libraries/base/src/main-lobby.cpp -o CMakeFiles/base.dir/src/main-lobby.cpp.s
+	cd /home/dev-projects/game-backend-cpp/backend/tests/build/backend_path/libraries/base && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dev-projects/game-backend-cpp/backend/libraries/base/src/main-lobby.cpp -o CMakeFiles/base.dir/src/main-lobby.cpp.s
 
 backend_path/libraries/base/CMakeFiles/base.dir/src/person.cpp.o: backend_path/libraries/base/CMakeFiles/base.dir/flags.make
 backend_path/libraries/base/CMakeFiles/base.dir/src/person.cpp.o: ../../libraries/base/src/person.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dev-projects/game-backend-cpp/backend/tests/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object backend_path/libraries/base/CMakeFiles/base.dir/src/person.cpp.o"
-	cd /home/dev-projects/game-backend-cpp/backend/tests/build/backend_path/libraries/base && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/base.dir/src/person.cpp.o -c /home/dev-projects/game-backend-cpp/backend/libraries/base/src/person.cpp
+	cd /home/dev-projects/game-backend-cpp/backend/tests/build/backend_path/libraries/base && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/base.dir/src/person.cpp.o -c /home/dev-projects/game-backend-cpp/backend/libraries/base/src/person.cpp
 
 backend_path/libraries/base/CMakeFiles/base.dir/src/person.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/base.dir/src/person.cpp.i"
-	cd /home/dev-projects/game-backend-cpp/backend/tests/build/backend_path/libraries/base && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dev-projects/game-backend-cpp/backend/libraries/base/src/person.cpp > CMakeFiles/base.dir/src/person.cpp.i
+	cd /home/dev-projects/game-backend-cpp/backend/tests/build/backend_path/libraries/base && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dev-projects/game-backend-cpp/backend/libraries/base/src/person.cpp > CMakeFiles/base.dir/src/person.cpp.i
 
 backend_path/libraries/base/CMakeFiles/base.dir/src/person.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/base.dir/src/person.cpp.s"
-	cd /home/dev-projects/game-backend-cpp/backend/tests/build/backend_path/libraries/base && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dev-projects/game-backend-cpp/backend/libraries/base/src/person.cpp -o CMakeFiles/base.dir/src/person.cpp.s
+	cd /home/dev-projects/game-backend-cpp/backend/tests/build/backend_path/libraries/base && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dev-projects/game-backend-cpp/backend/libraries/base/src/person.cpp -o CMakeFiles/base.dir/src/person.cpp.s
 
 # Object files for target base
 base_OBJECTS = \

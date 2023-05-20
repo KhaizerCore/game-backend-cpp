@@ -63,27 +63,84 @@ int Board::movePieceInBoard(Board * board, position initial_position, position f
     return 0;
 }
 
+Board * Board::clone()
+{
+    Board * cloned = new Board();
+
+    
+    /**
+     * Copy white_pieces_taken array
+    */
+    for (int i = 0; i < this->white_pieces_taken.size(); i++)
+    {
+        if (NULL == this->white_pieces_taken[i]) { 
+            cloned->white_pieces_taken.push_back(NULL);
+        }else{
+            cloned->white_pieces_taken.push_back(this->white_pieces_taken[i]->clone());
+        }        
+    }
+
+    /**
+     * Copy black_pieces_taken array
+    */
+    for (int i = 0; i < this->black_pieces_taken.size(); i++)
+    {
+        if (NULL == this->black_pieces_taken[i]) { 
+            cloned->black_pieces_taken.push_back(NULL);
+        }else{
+            cloned->black_pieces_taken.push_back(this->black_pieces_taken[i]->clone());
+        } 
+    }
+
+    /**
+     * Init cloned board_matrix array of array
+    */
+    for (int i = 0; i < this->board_matrix.size(); i++)
+    {
+        vector<Piece *> empty_vector = {};
+        cloned->board_matrix.push_back(empty_vector);
+    }
+    /**
+     * Copy board_matrix array of array
+    */
+    for (int i = 0; i < this->board_matrix.size(); i++)
+    {
+        for (int j = 0; j < this->board_matrix[i].size(); j++)
+        {
+            Piece *p = this->board_matrix[i][j];
+            if (NULL == p) { 
+                cloned->board_matrix[i].push_back(NULL);
+            }else{
+                cloned->board_matrix[i].push_back(p->clone());
+            }
+        }      
+    }
+
+    return cloned;
+}
+
 /**
  * Must be used after movement basic validation is successfull
 */
 bool Board::CheckToItselfAfterMovement(ChessPlayer *player, position initial_position, position final_position){
-    vector<vector<Piece*>> board_matrix_sim;
+    // vector<vector<Piece*>> board_matrix_sim;
 
-    // copy this->board values to board_matrix_sim that will be used to simulate movements
-    for(int y = 0; y < this->board_matrix.size(); y++){
-        board_matrix_sim.push_back(vector<Piece*>{});
-        for (int x = 0; x < this->board_matrix[y].size(); x++){
-            Piece * piece = this->board_matrix[y][x];
-            if (NULL == piece) {
-                board_matrix_sim[y].push_back(NULL);
-            }else{
-                board_matrix_sim[y].push_back(piece->clone());
-            }
-        }
-    }
+    // // copy this->board values to board_matrix_sim that will be used to simulate movements
+    // for(int y = 0; y < this->board_matrix.size(); y++){
+    //     board_matrix_sim.push_back(vector<Piece*>{});
+    //     for (int x = 0; x < this->board_matrix[y].size(); x++){
+    //         Piece * piece = this->board_matrix[y][x];
+    //         if (NULL == piece) {
+    //             board_matrix_sim[y].push_back(NULL);
+    //         }else{
+    //             board_matrix_sim[y].push_back(piece->clone());
+    //         }
+    //     }
+    // }
     
     // copied board that will be used in simulation
-    Board *simulated_board = new Board(board_matrix_sim);
+    // Board *simulated_board = new Board(board_matrix_sim);
+    Board *simulated_board = this->clone();
 
     // make the planned movement
     Board::movePieceInBoard(simulated_board, initial_position, final_position);

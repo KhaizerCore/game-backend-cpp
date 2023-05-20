@@ -79,54 +79,54 @@ include backend_path/libraries/chess/CMakeFiles/chess.dir/flags.make
 backend_path/libraries/chess/CMakeFiles/chess.dir/src/board.cpp.o: backend_path/libraries/chess/CMakeFiles/chess.dir/flags.make
 backend_path/libraries/chess/CMakeFiles/chess.dir/src/board.cpp.o: ../../libraries/chess/src/board.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dev-projects/game-backend-cpp/backend/tests/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object backend_path/libraries/chess/CMakeFiles/chess.dir/src/board.cpp.o"
-	cd /home/dev-projects/game-backend-cpp/backend/tests/build/backend_path/libraries/chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/chess.dir/src/board.cpp.o -c /home/dev-projects/game-backend-cpp/backend/libraries/chess/src/board.cpp
+	cd /home/dev-projects/game-backend-cpp/backend/tests/build/backend_path/libraries/chess && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/chess.dir/src/board.cpp.o -c /home/dev-projects/game-backend-cpp/backend/libraries/chess/src/board.cpp
 
 backend_path/libraries/chess/CMakeFiles/chess.dir/src/board.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/chess.dir/src/board.cpp.i"
-	cd /home/dev-projects/game-backend-cpp/backend/tests/build/backend_path/libraries/chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dev-projects/game-backend-cpp/backend/libraries/chess/src/board.cpp > CMakeFiles/chess.dir/src/board.cpp.i
+	cd /home/dev-projects/game-backend-cpp/backend/tests/build/backend_path/libraries/chess && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dev-projects/game-backend-cpp/backend/libraries/chess/src/board.cpp > CMakeFiles/chess.dir/src/board.cpp.i
 
 backend_path/libraries/chess/CMakeFiles/chess.dir/src/board.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/chess.dir/src/board.cpp.s"
-	cd /home/dev-projects/game-backend-cpp/backend/tests/build/backend_path/libraries/chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dev-projects/game-backend-cpp/backend/libraries/chess/src/board.cpp -o CMakeFiles/chess.dir/src/board.cpp.s
+	cd /home/dev-projects/game-backend-cpp/backend/tests/build/backend_path/libraries/chess && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dev-projects/game-backend-cpp/backend/libraries/chess/src/board.cpp -o CMakeFiles/chess.dir/src/board.cpp.s
 
 backend_path/libraries/chess/CMakeFiles/chess.dir/src/piece.cpp.o: backend_path/libraries/chess/CMakeFiles/chess.dir/flags.make
 backend_path/libraries/chess/CMakeFiles/chess.dir/src/piece.cpp.o: ../../libraries/chess/src/piece.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dev-projects/game-backend-cpp/backend/tests/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object backend_path/libraries/chess/CMakeFiles/chess.dir/src/piece.cpp.o"
-	cd /home/dev-projects/game-backend-cpp/backend/tests/build/backend_path/libraries/chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/chess.dir/src/piece.cpp.o -c /home/dev-projects/game-backend-cpp/backend/libraries/chess/src/piece.cpp
+	cd /home/dev-projects/game-backend-cpp/backend/tests/build/backend_path/libraries/chess && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/chess.dir/src/piece.cpp.o -c /home/dev-projects/game-backend-cpp/backend/libraries/chess/src/piece.cpp
 
 backend_path/libraries/chess/CMakeFiles/chess.dir/src/piece.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/chess.dir/src/piece.cpp.i"
-	cd /home/dev-projects/game-backend-cpp/backend/tests/build/backend_path/libraries/chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dev-projects/game-backend-cpp/backend/libraries/chess/src/piece.cpp > CMakeFiles/chess.dir/src/piece.cpp.i
+	cd /home/dev-projects/game-backend-cpp/backend/tests/build/backend_path/libraries/chess && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dev-projects/game-backend-cpp/backend/libraries/chess/src/piece.cpp > CMakeFiles/chess.dir/src/piece.cpp.i
 
 backend_path/libraries/chess/CMakeFiles/chess.dir/src/piece.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/chess.dir/src/piece.cpp.s"
-	cd /home/dev-projects/game-backend-cpp/backend/tests/build/backend_path/libraries/chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dev-projects/game-backend-cpp/backend/libraries/chess/src/piece.cpp -o CMakeFiles/chess.dir/src/piece.cpp.s
+	cd /home/dev-projects/game-backend-cpp/backend/tests/build/backend_path/libraries/chess && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dev-projects/game-backend-cpp/backend/libraries/chess/src/piece.cpp -o CMakeFiles/chess.dir/src/piece.cpp.s
 
 backend_path/libraries/chess/CMakeFiles/chess.dir/src/match.cpp.o: backend_path/libraries/chess/CMakeFiles/chess.dir/flags.make
 backend_path/libraries/chess/CMakeFiles/chess.dir/src/match.cpp.o: ../../libraries/chess/src/match.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dev-projects/game-backend-cpp/backend/tests/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object backend_path/libraries/chess/CMakeFiles/chess.dir/src/match.cpp.o"
-	cd /home/dev-projects/game-backend-cpp/backend/tests/build/backend_path/libraries/chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/chess.dir/src/match.cpp.o -c /home/dev-projects/game-backend-cpp/backend/libraries/chess/src/match.cpp
+	cd /home/dev-projects/game-backend-cpp/backend/tests/build/backend_path/libraries/chess && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/chess.dir/src/match.cpp.o -c /home/dev-projects/game-backend-cpp/backend/libraries/chess/src/match.cpp
 
 backend_path/libraries/chess/CMakeFiles/chess.dir/src/match.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/chess.dir/src/match.cpp.i"
-	cd /home/dev-projects/game-backend-cpp/backend/tests/build/backend_path/libraries/chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dev-projects/game-backend-cpp/backend/libraries/chess/src/match.cpp > CMakeFiles/chess.dir/src/match.cpp.i
+	cd /home/dev-projects/game-backend-cpp/backend/tests/build/backend_path/libraries/chess && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dev-projects/game-backend-cpp/backend/libraries/chess/src/match.cpp > CMakeFiles/chess.dir/src/match.cpp.i
 
 backend_path/libraries/chess/CMakeFiles/chess.dir/src/match.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/chess.dir/src/match.cpp.s"
-	cd /home/dev-projects/game-backend-cpp/backend/tests/build/backend_path/libraries/chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dev-projects/game-backend-cpp/backend/libraries/chess/src/match.cpp -o CMakeFiles/chess.dir/src/match.cpp.s
+	cd /home/dev-projects/game-backend-cpp/backend/tests/build/backend_path/libraries/chess && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dev-projects/game-backend-cpp/backend/libraries/chess/src/match.cpp -o CMakeFiles/chess.dir/src/match.cpp.s
 
 backend_path/libraries/chess/CMakeFiles/chess.dir/src/chess-player.cpp.o: backend_path/libraries/chess/CMakeFiles/chess.dir/flags.make
 backend_path/libraries/chess/CMakeFiles/chess.dir/src/chess-player.cpp.o: ../../libraries/chess/src/chess-player.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dev-projects/game-backend-cpp/backend/tests/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object backend_path/libraries/chess/CMakeFiles/chess.dir/src/chess-player.cpp.o"
-	cd /home/dev-projects/game-backend-cpp/backend/tests/build/backend_path/libraries/chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/chess.dir/src/chess-player.cpp.o -c /home/dev-projects/game-backend-cpp/backend/libraries/chess/src/chess-player.cpp
+	cd /home/dev-projects/game-backend-cpp/backend/tests/build/backend_path/libraries/chess && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/chess.dir/src/chess-player.cpp.o -c /home/dev-projects/game-backend-cpp/backend/libraries/chess/src/chess-player.cpp
 
 backend_path/libraries/chess/CMakeFiles/chess.dir/src/chess-player.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/chess.dir/src/chess-player.cpp.i"
-	cd /home/dev-projects/game-backend-cpp/backend/tests/build/backend_path/libraries/chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dev-projects/game-backend-cpp/backend/libraries/chess/src/chess-player.cpp > CMakeFiles/chess.dir/src/chess-player.cpp.i
+	cd /home/dev-projects/game-backend-cpp/backend/tests/build/backend_path/libraries/chess && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dev-projects/game-backend-cpp/backend/libraries/chess/src/chess-player.cpp > CMakeFiles/chess.dir/src/chess-player.cpp.i
 
 backend_path/libraries/chess/CMakeFiles/chess.dir/src/chess-player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/chess.dir/src/chess-player.cpp.s"
-	cd /home/dev-projects/game-backend-cpp/backend/tests/build/backend_path/libraries/chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dev-projects/game-backend-cpp/backend/libraries/chess/src/chess-player.cpp -o CMakeFiles/chess.dir/src/chess-player.cpp.s
+	cd /home/dev-projects/game-backend-cpp/backend/tests/build/backend_path/libraries/chess && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dev-projects/game-backend-cpp/backend/libraries/chess/src/chess-player.cpp -o CMakeFiles/chess.dir/src/chess-player.cpp.s
 
 # Object files for target chess
 chess_OBJECTS = \
